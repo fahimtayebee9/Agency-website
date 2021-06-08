@@ -1,0 +1,552 @@
+/*=================================================================
+                    Font Imports                              
+=================================================================*/
+@font-face {
+    font-family: HelveticaNeueBold;
+    src: url(../fonts/HelveticaNeue-Bold.ttf);
+}
+@font-face {
+    font-family: HelveticaBold;
+    src: url(../fonts/Helvetica-Bold.ttf);
+}
+@font-face {
+    font-family: HelveticaNormal;
+    src: url(../fonts/Helvetica.ttf);
+}
+/*=================================================================
+                    PRELOADER                              
+=================================================================*/
+.infinity {
+    width: 120px;
+    height: 60px;
+    position: relative;
+}
+
+.infinity div,
+.infinity span {
+    position: absolute;
+}
+
+.infinity div {
+    top: 0;
+    left: 50%;
+    width: 60px;
+    height: 60px;
+    animation: rotate 6.9s linear infinite;
+}
+
+.infinity div span {
+    left: -8px;
+    top: 50%;
+    margin: -8px 0 0 0;
+    width: 16px;
+    height: 16px;
+    display: block;
+    background: #ff4c60;
+    box-shadow: 2px 2px 8px rgba(255, 76, 96, 0.09);
+    border-radius: 50%;
+    transform: rotate(90deg);
+    animation: move 6.9s linear infinite;
+}
+
+.infinity div span:before,
+.infinity div span:after {
+    content: "";
+    position: absolute;
+    display: block;
+    border-radius: 50%;
+    width: 14px;
+    height: 14px;
+    background: inherit;
+    top: 50%;
+    left: 50%;
+    margin: -7px 0 0 -7px;
+    box-shadow: inherit;
+}
+
+.infinity div span:before {
+    animation: drop1 0.8s linear infinite;
+}
+
+.infinity div span:after {
+    animation: drop2 0.8s linear infinite 0.4s;
+}
+
+.infinity div:nth-child(2) {
+    animation-delay: -2.3s;
+}
+
+.infinity div:nth-child(2) span {
+    animation-delay: -2.3s;
+}
+
+.infinity div:nth-child(3) {
+    animation-delay: -4.6s;
+}
+
+.infinity div:nth-child(3) span {
+    animation-delay: -4.6s;
+}
+
+.infinityChrome {
+    width: 128px;
+    height: 60px;
+}
+
+.infinityChrome div {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background: #ff4c60;
+    box-shadow: 2px 2px 8px rgba(255, 76, 96, 0.09);
+    border-radius: 50%;
+    animation: moveSvg 6.9s linear infinite;
+    -webkit-filter: url(#goo);
+    filter: url(#goo);
+    transform: scaleX(-1);
+    offset-path: path(
+        "M64.3636364,29.4064278 C77.8909091,43.5203348 84.4363636,56 98.5454545,56 C112.654545,56 124,44.4117395 124,30.0006975 C124,15.5896556 112.654545,3.85282763 98.5454545,4.00139508 C84.4363636,4.14996252 79.2,14.6982509 66.4,29.4064278 C53.4545455,42.4803627 43.5636364,56 29.4545455,56 C15.3454545,56 4,44.4117395 4,30.0006975 C4,15.5896556 15.3454545,4.00139508 29.4545455,4.00139508 C43.5636364,4.00139508 53.1636364,17.8181672 64.3636364,29.4064278 Z"
+    );
+}
+
+.infinityChrome div:before,
+.infinityChrome div:after {
+    content: "";
+    position: absolute;
+    display: block;
+    border-radius: 50%;
+    width: 14px;
+    height: 14px;
+    background: inherit;
+    top: 50%;
+    left: 50%;
+    margin: -7px 0 0 -7px;
+    box-shadow: inherit;
+}
+
+.infinityChrome div:before {
+    animation: drop1 0.8s linear infinite;
+}
+
+.infinityChrome div:after {
+    animation: drop2 0.8s linear infinite 0.4s;
+}
+
+.infinityChrome div:nth-child(2) {
+    animation-delay: -2.3s;
+}
+
+.infinityChrome div:nth-child(3) {
+    animation-delay: -4.6s;
+}
+
+.wrapper {
+    position: relative;
+    text-align: center;
+    margin: auto;
+    margin-top: 35px;
+    margin-left: -30px;
+}
+.circle {
+    display: inline-block;
+    border-radius: 50%;
+    animation: loading 1.5s cubic-bezier(0.8, 0.5, 0.2, 1.4) infinite;
+    transform-origin: bottom center;
+    position: relative;
+    color: black;
+    font-size: 28px;
+    font-weight: 800;
+    transition-property: color;
+    transition: 0.2s all ease-in-out;
+}
+
+.circle-1 {
+    animation-delay: 0.1s;
+}
+.circle-2 {
+    animation-delay: 0.2s;
+}
+.circle-3 {
+    animation-delay: 0.3s;
+}
+.circle-4 {
+    animation-delay: 0.4s;
+}
+.circle-5 {
+    animation-delay: 0.5s;
+}
+.circle-6 {
+    animation-delay: 0.6s;
+}
+.circle-7 {
+    animation-delay: 0.7s;
+}
+.circle-8 {
+    animation-delay: 0.8s;
+}
+
+#preloader {
+    background: #353353;
+    height: 100%;
+    position: fixed;
+    width: 100%;
+    z-index: 1031;
+}
+
+#preloader .outer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#preloader.light {
+    background: #f9f9ff;
+}
+
+.goo-outer {
+    display: none;
+}
+/* =============================================
+                Scrollbar Style
+============================================= */
+body::-webkit-scrollbar {
+    width: 0.6em;
+}
+
+body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+body::-webkit-scrollbar-thumb {
+    background: linear-gradient(to bottom, #c20030 0%, #ff0a02 95%);
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+/* =============================================
+                Footer Style
+============================================= */
+footer{
+    background: #515151;
+}
+footer p{
+    margin: 0;
+    font-size: 16px;
+    font-family: 'Open Sans',sans-serif;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: #cecece;
+    padding: 15px;
+    text-align: center;
+}
+footer p span{
+    font-weight: 600;
+    color: #ff362f;
+}
+
+/* =============================================
+                Get In Touch
+============================================= */
+.gt-touch{
+    padding: 85px 0px;
+    background: #2a2a2a;
+    color: white;
+}
+.cmt{
+    font-family: HelveticaNeueBold,sans-serif;
+    font-size: 34px;
+    font-weight: 700;
+    margin: 0;
+    text-align: center;
+}
+.ss-icon{
+    margin: auto;
+    margin: 30px 0px;
+}
+.ss-icon ul{
+    margin: 0;
+    justify-content: center;
+}
+.ss-icon ul li{
+    height: 60px;
+    width: 60px;
+    padding: 10px;
+    margin-right: 25px;
+    border: 2px solid #515151;
+    font-size: 22px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    transition: 0.3s all ease-in-out;
+    text-align: center;
+}
+.ss-icon ul li:last-child{
+    margin-right: 0px;
+}
+.ss-icon ul li:nth-child(1):hover{
+    border-color: #4267B2;
+    color: #4267B2;
+    box-shadow: 0 0 10px 3px #4267b27a;
+}
+.ss-icon ul li:nth-child(2):hover{
+    border-color: #00acee;
+    color: #00acee;
+    box-shadow: 0 0 10px 3px #00acee7a;
+}
+.ss-icon ul li:nth-child(3):hover{
+    border-color: #db4a39;
+    color: #db4a39;
+    box-shadow: 0 0 10px 3px #db4a397a;
+}
+.ss-icon ul li:nth-child(4):hover{
+    border-color: #0e76a8;
+    color: #0e76a8;
+    box-shadow: 0 0 10px 3px #0e76a87a;
+}
+.content .pst{
+    font-size: 18px;
+    font-family: 'Open Sans',sans-serif;
+    font-weight: 500;
+    margin: 0;
+    text-align: center;
+}
+.gt-touch .content{
+    margin-bottom: 30px;
+}
+.gt-touch .frm-content{
+    text-align: center;
+}
+.form-group{
+    position: relative;
+    margin: 0;
+    margin-bottom: 30px;
+}
+.gt-touch .frm-content .form-control{
+    border-radius: 0px;
+    color: #fff;
+    background-color: #515151;
+    padding: 10px 14px;
+    height: auto;
+    font-size: 18px;
+    height: auto;
+}
+.form-control:focus {
+    outline: 0;
+    box-shadow: none;
+}
+.effect-8{
+    border: 1px solid #ccc; 
+    padding: 7px 14px 9px; 
+    transition: 0.4s;
+}
+.effect-8 ~ .focus-border:before,.effect-8 ~ .focus-border:after{
+    content: ""; 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 0; 
+    height: 2px; 
+    background-color: #db4a39; 
+    transition: 0.3s;
+}
+.effect-8 ~ .focus-border:after{
+    top: auto; 
+    bottom: 0; 
+    left: auto; 
+    right: 0;
+}
+.effect-8 ~ .focus-border i:before,
+.effect-8 ~ .focus-border i:after{
+    content: ""; 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 2px; 
+    height: 0; 
+    background-color: #db4a39; 
+    transition: 0.4s;
+}
+.effect-8 ~ .focus-border i:after{
+    left: auto; 
+    right: 0; 
+    top: auto; 
+    bottom: 0;
+}
+.effect-8:focus ~ .focus-border:before, .effect-8:focus ~ .focus-border:after{
+    width: 100%; 
+    transition: 0.3s;
+}
+.effect-8:focus ~ .focus-border i:before, .effect-8:focus ~ .focus-border i:after{
+    height: 100%; 
+    transition: 0.4s;
+}
+.btn-custom{
+    padding: 15px 40px;
+    font-size: 18px;
+    font-family: HelveticaBold,sans-serif;
+    color: white;
+    border: 2px solid #515151;
+    position: relative;
+    z-index: 9;
+    border-radius: 0;
+}
+.btn-custom::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 50%;
+    width: 0%;
+    background: #de2b24;
+    opacity: 0;
+    z-index: -1;
+    transition: 0.3s all ease-in-out;
+}
+.btn-custom::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 50%;
+    width: 0%;
+    background: #de2b24;
+    opacity: 0;
+    z-index: -1;
+    transition: 0.3s all ease-in-out;
+}
+.btn-custom:hover{
+    border: 2px solid transparent;
+    color: white;
+}
+.btn-custom:hover::before{
+    width: 100%;
+    opacity: 1;
+}
+.btn-custom:hover::after{
+    width: 100%;
+    opacity: 1;
+}
+
+/* =============================================
+                Analysis Section
+============================================= */
+.analysis{
+    padding: 110px 0px;
+    background: #1287bf;
+}
+.dropdown-form-cont{
+    margin: auto;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.btn-form{
+    padding: 15px;
+    border: 3px solid white;
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    font-size: 26px;
+    line-height: 28px;
+    color: white;
+}
+.btn-form:hover{
+    color: white;
+}
+.drop-form{
+    margin-top: 60px;
+    padding: 50px;
+    background: white;
+    position: relative;
+    transition-property: height;
+    height: 0%;
+    transition-duration: 2s;
+}
+.animate-icon {
+    transition: 0.4s all ease-in-out;
+}
+.rotate {
+    transform: rotate(180deg);
+}
+.form-dp{
+    margin-top: 30px;
+}
+.form-dp .form-group{
+    margin-bottom: 10px;
+}
+.drop-form .effect-8 ~ .focus-border i:before,
+.drop-form .effect-8 ~ .focus-border i:after{
+    background-color: #1287bf; 
+}
+.drop-form .effect-8 ~ .focus-border:before,.drop-form .effect-8 ~ .focus-border:after{
+    background-color: #1287bf; 
+}
+.drop-form .form-control{
+    height: auto;
+    padding: 15px 14px;
+}
+.drop-form input::placeholder{
+    font-size: 16px;
+    font-family: HelveticaNormal,sans-serif;
+    font-weight: 500;
+    color: rgb(172, 172, 172);
+}
+.drop-form .btn-custom{
+    color: rgb(42, 42, 42);
+    text-transform: uppercase;
+    margin-top: 35px;
+    padding: 10px 40px;
+}
+.drop-form .btn-custom:hover{
+    color: #fff;
+}
+.drop-form .btn-custom::before{
+    height: 0%;
+    width: 50.5%;
+}
+.drop-form .btn-custom::after{
+    height: 0%;
+    width: 50.5%;
+}
+.drop-form .btn-custom:hover::before{
+    height: 100%;
+}
+.drop-form .btn-custom:hover::after{
+    height: 100%;
+}
+.drop-form .btn-close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(25px,-25px);
+    height: 50px;
+    width: 50px;
+    background: rgb(133, 133, 133);
+    color: white;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    font-weight: 700;
+    font-size: 20px;
+    box-shadow: none;
+}
+.btn-close:hover{
+    background: #de2b24;
+}
+.drop-form::before{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-100%);
+    width: 0;
+    height: 0;
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+    border-bottom: 35px solid white;
+}
