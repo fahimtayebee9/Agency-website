@@ -629,3 +629,81 @@ footer p span{
     display: block;
     margin-top: 25px;
 }
+
+/* =============================================
+                OUR APPROACH
+============================================= */
+.apr-body{
+    padding: 110px 0px;
+    background: #f3f3f3;
+}
+.apr-body .dsb{
+    background: rgb(29, 29, 29);
+}
+.apr-box{
+    background: white;
+    border-radius: 5px;
+    position: relative;
+    margin-top: 35px;
+}
+.apr-box-body{
+    padding: 0px 75px;
+    text-align: justify;
+}
+.apr-box-body .cmt{
+    font-size: 20px;
+    text-align: left;
+    margin-bottom: 10px;
+}
+.apr-count-l{
+    position: absolute;
+    top: 10%;
+    left: 0%;
+    transform: translate(-65%, 0%);
+    height: 100px;
+    width: 100px;
+    background: red;
+    border: 2px solid #fff;
+    color: white;
+    text-align: center;
+    margin: auto;
+}
+.apr-count-r{
+    position: absolute;
+    top: 10%;
+    right: 0%;
+    transform: translate(65%, 0%);
+    height: 100px;
+    width: 100px;
+    background: red;
+    border: 2px solid #fff;
+    color: white;
+    text-align: center;
+    margin: auto;
+    z-index: 9;
+}
+.rd-3{
+    font-size: 50px!important;
+    margin: 0!important;
+    margin-top: 0px!important;
+    font-weight: 700;
+    line-height: 1.2!important;
+}
+.apr-count-l .cmt, .apr-count-r .cmt{
+    font-size: 60px;
+    font-family: 'Georgia',sans-serif;
+    margin: 0;
+    margin-top: 5px;
+    font-weight: 700;
+    line-height: .8;
+}
+.apr-count-l .pst, .apr-count-r .pst{
+    font-size: 18px;
+    font-family: HelveticaNormal,sans-serif;
+    font-weight: 700;
+    margin: 0;
+}
+
+.blg-con{
+    margin-top: 55px;
+}
