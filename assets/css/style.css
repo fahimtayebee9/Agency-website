@@ -637,7 +637,7 @@ footer p span{
     padding: 110px 0px;
     background: #f3f3f3;
 }
-.apr-body .dsb{
+.apr-body .dsb,.abt-body .dsb{
     background: rgb(29, 29, 29);
 }
 .apr-box{
@@ -706,4 +706,102 @@ footer p span{
 
 .blg-con{
     margin-top: 55px;
+}
+
+/* =============================================
+                About Us
+============================================= */
+.abt-body{
+    padding: 100px 0px;
+    background: white;
+}
+.abt-body .apr-box-body{
+    padding: 0px 20px;
+    text-align: center;
+    margin-top: 35px;
+}
+.abt-body .apr-box .pst,.abt-body .apr-box .cmt{
+    text-align: center;
+}
+
+/* =============================================
+                Banner Section
+============================================= */
+.banner{
+    min-height: 30vh;
+    align-items: center;
+    background-image: url(../img/banner.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(51, 51, 51, 0.438);
+    background-blend-mode: overlay;
+    color: white;
+}
+.banner-con{
+    min-height: 70vh;
+    padding-left: 0px;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+}
+.banner .cmt{
+    font-size: 48px;
+}
+.banner .pst{
+    font-size: 30px;
+    text-align: center;
+}
+.banner .btn-custom::after, .banner .btn-custom::before{
+    display: none;
+}
+.banner .btn-custom{
+    background: #f8cd53;
+    text-transform: uppercase;
+    font-size: 22px;
+    border: none;
+    border-radius: 6px;
+}
+
+/* =============================================
+                MENU BAR
+============================================= */
+header{
+    padding: 20px 0px;
+}
+.nav-item .hover-ani{
+    font-size: 18px;
+    font-family: HelveticaNeueBold,sans-serif;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.mrn{
+    margin: 0 10px;
+}
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+    color: #de2b24;
+}
+header .btn-custom::after, header .btn-custom::before{
+    display: none;
+}
+header .btn-custom{
+    padding: 8px 20px;
+    margin-left: 15px;
+}
+.dot{
+    position: relative;
+}
+.dot::before{
+    height: 10px;
+    width: 10px;
+    border-radius: 100%;
+    background: #515151;
+    content: '';
+    position: absolute;
+    top: 40%;
+    right: -20%;
+}
+.dot:last-child::before{
+    right: -12%;
 }
