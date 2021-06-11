@@ -11,11 +11,9 @@
     <link rel="stylesheet" href="assets/lib/bootstrap-4.6.0-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/lib/fontawesome-free/css/all.min.css">
     <link rel="stylesheet" href="assets/css/animate.css">
-    <link rel="stylesheet" href="assets/css/hover.css">
-    <link rel="stylesheet" href="assets/lib/fancybox-master/dist/jquery.fancybox.min.css">
-    <link rel="stylesheet" href="assets/lib/OwlCarousel2-2.3.4/dist/assets/owl.carousel.css">
-    <link rel="stylesheet" href="assets/lib/simple-pretty-accordion/css/nioicon.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/media.css">
 
     <link
         href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
@@ -27,15 +25,13 @@
 <body>
 
     <!-- Preloader -->
-    <div id="preloader" class="light">
+    <div id="preloader" class="light"> 
         <div class="outer">
-            <!-- Google Chrome -->
             <div class="infinityChrome">
                 <div></div>
                 <div></div>
                 <div></div>
             </div>
-            <!-- Safari and others -->
             <div class="infinity">
                 <div>
                     <span></span>
@@ -57,29 +53,32 @@
                 <span class="circle circle-7">G</span>
             </div>
         </div>
-    </div>
+    </div> 
     <!-- Preloader End-->
 
     <!-- Main Body Section -->
-    <section>
+    <section class="overflow-hidden">
 
         <!-- TOP BAR -->
         <div class="top-contact" id="top-menu">
             <div class="container">
                 <div class="row justify-content-end">
                     <div class="col-md-6">
-                        <ul class="d-flex list-unstyled justify-content-end contact-list">
+                        <ul class="d-flex m-0 list-unstyled justify-content-end contact-list">
                             <li>
-                                <span>
-                                    <i class="fas fa-mobile-alt default-color"></i>Save big on
-                                    our app!
-                                </span>
+                                <p>
+                                    <i><i class="fas fa-mobile-alt"></i></i>6758 41678
+                                </p>
                             </li>
                             <li>
-                                <span>
-                                    <i class="fas fa-mobile-alt default-color"></i>Save big on
-                                    our app!
-                                </span>
+                                <p>
+                                    <i><i class="fas fa-envelope-open-text"></i></i>info@business.co
+                                </p>
+                            </li>
+                            <li>
+                                <a href="pre.html">
+                                    <i class="fab fa-facebook-square default-color"></i>
+                                </a>
                             </li>
                         </ul>
                     </div>
@@ -116,7 +115,7 @@
                                     <a class="nav-link hover-ani" smooth-scroll-jump href="#wrk">our work</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link hover-ani btn btn-custom" smooth-scroll-jump href="#ans">
+                                    <a class="hover-ani btn btn-custom" smooth-scroll-jump href="#ans">
                                         free consultation
                                     </a>
                                 </li>
@@ -131,7 +130,7 @@
         <!-- BANNER SECTION -->
         <section class="banner">
             <div class="container">
-                <div class="row banner-con">
+                <div class="row banner-con" data-aos="fade-down">
                     <div class="col-md-8">
                         <h1 class="cmt">We Providing</h1>
                         <p class="pst">Social Media marketing for businesses</p>
@@ -146,7 +145,7 @@
         <section class="abt-body" id="abt">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-8 m-auto content">
+                    <div class="col-md-8 m-auto content " data-aos="zoom-in">
                         <h1 class="cmt">About Us</h1>
                         <p class="pst">We are added our major Services</p>
                         <span class="dsb"></span>
@@ -156,7 +155,7 @@
                 <div class="row blg-con">
 
                     <!-- FIRST Step -->
-                    <div class="col-md-4">
+                    <div class="col-sm-6 col-lg-4 col-xl-4 col-md-6" data-aos="zoom-in">
                         <div class="apr-box text-center">
                             <div class="img-box">
                                 <img src="assets/img/fb_like.png" class="img-fluid w-25" alt="">
@@ -170,7 +169,7 @@
                     </div>
 
                     <!-- 2nd Step -->
-                    <div class="col-md-4">
+                    <div class="col-sm-6 col-lg-4 col-xl-4 col-md-6" data-aos="zoom-in">
                         <div class="apr-box text-center">
                             <div class="img-box">
                                 <img src="assets/img/book.png" class="img-fluid w-25" alt="">
@@ -184,7 +183,7 @@
                     </div>
 
                     <!-- 3rd Step -->
-                    <div class="col-md-4">
+                    <div class="col-sm-6 col-lg-4 col-xl-4 col-md-6" data-aos="zoom-in">
                         <div class="apr-box text-center">
                             <div class="img-box">
                                 <img src="assets/img/messanger_color.png" class="img-fluid w-25" alt="">
@@ -206,17 +205,16 @@
         <section class="apr-body" id="apr">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-8 m-auto content">
-                        <h1 class="cmt">Our work</h1>
+                    <div class="col-md-8 m-auto content"  data-aos="zoom-in">
+                        <h1 class="cmt">Our Approach</h1>
                         <p class="pst">We are added our featured works below</p>
                         <span class="dsb"></span>
                     </div>
                 </div>
 
                 <div class="row blg-con">
-
                     <!-- FIRST Step -->
-                    <div class="col-md-12">
+                    <div class="col-sm-6 col-md-12" data-aos="zoom-in">
                         <div class="apr-box">
                             <div class="row">
                                 <div class="col-md-4">
@@ -229,7 +227,7 @@
                                     </div>
                                     <div class="apr-box-body">
                                         <h4 class="cmt">Step 1 : Heading Here</h4>
-                                        <p class="pst">Lorem Ipsum is simply dummy text of the printing and typesetting
+                                        <p class="psd">Lorem Ipsum is simply dummy text of the printing and typesetting
                                             industry. Lorem Ipsum has been the industry's standard dummy text ever since
                                             the 1500s, when an unknown printer took a galley of type and scrambled.</p>
                                     </div>
@@ -239,7 +237,7 @@
                     </div>
 
                     <!-- 2nd Step -->
-                    <div class="col-md-12">
+                    <div class="col-sm-6  col-md-12" data-aos="zoom-in">
                         <div class="apr-box">
                             <div class="row">
                                 <div class="col-md-8 m-auto">
@@ -247,9 +245,9 @@
                                         <h1 class="cmt">2</h1>
                                         <p class="pst">Step</p>
                                     </div>
-                                    <div class="apr-box-body">
+                                    <div class="apr-box-body right">
                                         <h4 class="cmt">Step 2 : Heading Here</h4>
-                                        <p class="pst">Lorem Ipsum is simply dummy text of the printing and typesetting
+                                        <p class="psd">Lorem Ipsum is simply dummy text of the printing and typesetting
                                             industry. Lorem Ipsum has been the industry's standard dummy text ever since
                                             the 1500s, when an unknown printer took a galley of type and scrambled.</p>
                                     </div>
@@ -262,7 +260,7 @@
                     </div>
 
                     <!-- 3rd Step -->
-                    <div class="col-md-12">
+                    <div class="col-sm-6  col-md-12" data-aos="zoom-in">
                         <div class="apr-box">
                             <div class="row">
                                 <div class="col-md-4">
@@ -275,7 +273,7 @@
                                     </div>
                                     <div class="apr-box-body">
                                         <h4 class="cmt">Step 3 : Heading Here</h4>
-                                        <p class="pst">Lorem Ipsum is simply dummy text of the printing and typesetting
+                                        <p class="psd">Lorem Ipsum is simply dummy text of the printing and typesetting
                                             industry. Lorem Ipsum has been the industry's standard dummy text ever since
                                             the 1500s, when an unknown printer took a galley of type and scrambled.</p>
                                     </div>
@@ -285,7 +283,7 @@
                     </div>
 
                     <!-- 4th Step -->
-                    <div class="col-md-12">
+                    <div class="col-sm-6  col-md-12" data-aos="zoom-in">
                         <div class="apr-box">
                             <div class="row">
                                 <div class="col-md-8 m-auto">
@@ -293,9 +291,9 @@
                                         <h1 class="cmt rd-3">4</h1>
                                         <p class="pst">Step</p>
                                     </div>
-                                    <div class="apr-box-body">
+                                    <div class="apr-box-body right">
                                         <h4 class="cmt">Step 4 : Heading Here</h4>
-                                        <p class="pst">Lorem Ipsum is simply dummy text of the printing and typesetting
+                                        <p class="psd">Lorem Ipsum is simply dummy text of the printing and typesetting
                                             industry. Lorem Ipsum has been the industry's standard dummy text ever since
                                             the 1500s, when an unknown printer took a galley of type and scrambled.</p>
                                     </div>
@@ -315,14 +313,14 @@
         <section class="wrk-body" id="wrk">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-8 m-auto content">
+                    <div class="col-md-8 m-auto content"  data-aos="fade-down">
                         <h1 class="cmt">Our work</h1>
                         <p class="pst">We are added our featured works below</p>
                         <span class="dsb"></span>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-3 p-0">
+                    <div class="col-6 col-sm-6 col-lg-3 col-md-3 p-d" data-aos="fade-up">
                         <div class="prj-con item-2">
                             <img src="assets/img/project_1.png" class="img-fluid w-100" alt="">
                             <div class="prj-hv">
@@ -334,7 +332,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3 p-0">
+                    <div class="col-6 col-sm-6 col-lg-3 col-md-3 p-d" data-aos="fade-down">
                         <div class="prj-con item-2">
                             <img src="assets/img/project_2.png" class="img-fluid w-100" alt="">
                             <div class="prj-hv">
@@ -346,7 +344,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3 p-0">
+                    <div class="col-6 col-sm-6 col-lg-3 col-md-3 p-d" data-aos="fade-up">
                         <div class="prj-con item-2">
                             <img src="assets/img/project_3.png" class="img-fluid w-100" alt="">
                             <div class="prj-hv">
@@ -358,7 +356,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3 p-0">
+                    <div class="col-6 col-sm-6 col-lg-3 col-md-3 p-d" data-aos="fade-down">
                         <div class="prj-con item-2">
                             <img src="assets/img/project_4.png" class="img-fluid w-100" alt="">
                             <div class="prj-hv">
@@ -370,7 +368,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3 p-0">
+
+                    <div class="col-6 col-sm-6 col-lg-3 col-md-3 p-d" data-aos="fade-down">
                         <div class="prj-con item-1">
                             <img src="assets/img/project_4.png" class="img-fluid w-100" alt="">
                             <div class="prj-hv">
@@ -382,7 +381,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3 p-0">
+                    <div class="col-6 col-sm-6 col-lg-3 col-md-3 p-d" data-aos="fade-up">
                         <div class="prj-con item-1">
                             <img src="assets/img/project_3.png" class="img-fluid w-100" alt="">
                             <div class="prj-hv">
@@ -394,7 +393,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3 p-0">
+                    <div class="col-6 col-sm-6 col-lg-3 col-md-3 p-d" data-aos="fade-down">
                         <div class="prj-con item-1">
                             <img src="assets/img/project_2.png" class="img-fluid w-100" alt="">
                             <div class="prj-hv">
@@ -406,7 +405,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3 p-0">
+                    <div class="col-6 col-sm-6 col-lg-3 col-md-3 p-d" data-aos="fade-up">
                         <div class="prj-con item-1">
                             <img src="assets/img/project_1.png" class="img-fluid w-100" alt="">
                             <div class="prj-hv">
@@ -427,7 +426,7 @@
         <section class="analysis" id="ans">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-8 m-auto text-white">
+                    <div class="col-10 colsm-10 col-lg-8 col-xl-8 col-md-8 m-auto text-white" data-aos="fade-up">
                         <div class="content">
                             <h1 class="cmt">Get Your Free Facebook Analysis Now</h1>
                             <p class="pst">Enter your details below</p>
@@ -479,9 +478,9 @@
 
         <!-- Get-In-Touch Section -->
         <section class="gt-touch" id="gtt">
-            <div class="container">
+            <div class="container" data-aos="zoom-out">
                 <div class="row">
-                    <div class="col-md-8 m-auto">
+                    <div class="col-10 colsm-10 col-lg-8 col-xl-8  col-md-8 m-auto">
                         <div class="content">
                             <h1 class="cmt">Get in touch</h1>
                             <div class="ss-icon">
@@ -533,19 +532,24 @@
     <script src="assets/lib/bootstrap-4.6.0-dist/js/popper.min.js"></script>
     <script src="assets/lib/bootstrap-4.6.0-dist/js/bootstrap.min.js"></script>
     <script src="assets/lib/fontawesome-free/js/all.min.js"></script>
-    <!-- <script src="assets/js/particles.js"></script>
-    <script src="assets/js/textyle.min.js"></script>
-    <script src="assets/js/textyleF.min.js"></script>
-    <script src="assets/js/typed.js"></script> -->
-    <!-- <script src="assets/js/vanilla.js"></script> -->
-    <!-- <script src="assets/lib/fancybox-master/dist/jquery.fancybox.js"></script> -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="assets/js/smooth-scroll-jump.js"></script>
-    <script src="assets/js/jump.js"></script>
-    <!-- <script src="assets/lib/jquery-circle-progress-master/dist/circle-progress.js"></script> -->
-    <!-- <script src="assets/lib/filter-anything-easy/dist/jquery.easyFilter.js"></script> -->
-    <!-- <script src="assets/js/vanilla-tilt.js"></script> -->
-    <!-- <script src="assets/lib/OwlCarousel2-2.3.4/dist/owl.carousel.js"></script> -->
+    <script src="assets/js/vanilla-tilt.js"></script>
     <script src="assets/js/script.js"></script>
+
+    <script>
+        AOS.init(
+            {
+                offset: 120, 
+                delay: 0, 
+                duration: 600, 
+                easing: 'ease-in-out',
+                once: false, 
+                mirror: false, 
+                anchorPlacement: 'top-bottom',
+            }
+        );
+    </script>
 
 </body>
 

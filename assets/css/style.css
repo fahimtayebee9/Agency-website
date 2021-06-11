@@ -1,3 +1,11 @@
+/*
+    Template Name: Agency Website HTML5 Template
+    Author: Md. Fahim Tayebee
+    Author URI: https://www.fahimtayebee.com/
+    Description: A simple Agency Website HTML5 TEMPLATE.
+    Version: 1.0
+*/
+
 /*=================================================================
                     Font Imports                              
 =================================================================*/
@@ -16,6 +24,99 @@
 /*=================================================================
                     PRELOADER                              
 =================================================================*/
+
+@keyframes moveSvg {
+    0% {
+        offset-distance: 0%;
+    }
+    25% {
+        background: #6c6ce5;
+    }
+    75% {
+        background: #ffd15c;
+    }
+    100% {
+        offset-distance: 100%;
+    }
+}
+
+@keyframes rotate {
+    50% {
+        transform: rotate(360deg);
+        margin-left: 0;
+    }
+    50.0001%, 100% {
+        margin-left: -60px;
+    }
+}
+
+@keyframes move {
+    0%, 50% {
+        left: -8px;
+    }
+
+    25% {
+        background: #ffd15c;
+    }
+
+    75% {
+        background: #583d72;
+    }
+
+    50.0001%, 100% {
+        left: auto;
+        right: -8px;
+    }
+}
+
+@keyframes drop1 {
+    100% {
+        transform: translate(32px, 8px) scale(0);
+    }
+}
+
+@keyframes drop2 {
+    0% {
+        transform: translate(0, 0) scale(0.9);
+    }
+    100% {
+        transform: translate(32px, 0px) scale(0);
+        -webkit-transform: translate(32px, 0px) scale(0);
+        -moz-transform: translate(32px, 0px) scale(0);
+        -ms-transform: translate(32px, 0px) scale(0);
+        -o-transform: translate(32px, 0px) scale(0);
+    }
+}
+
+@keyframes loading {
+    0% {
+        transform: translateY(0px);
+        color: #31326f;
+    }
+    50% {
+        transform: translateY(50px);
+        color: #ff4c60;
+    }
+    100% {
+        transform: translateY(0px);
+        color: #31326f;
+    }
+}
+@keyframes loading_icon {
+    0% {
+        transform: translateY(0px);
+        color: #861cff;
+    }
+    50% {
+        transform: translateY(25px);
+        color: #c900d6;
+    }
+    100% {
+        transform: translateY(0px);
+        color: #861cff;
+    }
+}
+
 .infinity {
     width: 120px;
     height: 60px;
@@ -130,7 +231,7 @@
 
 .infinityChrome div:after {
     animation: drop2 0.8s linear infinite 0.4s;
-}
+} 
 
 .infinityChrome div:nth-child(2) {
     animation-delay: -2.3s;
@@ -207,6 +308,7 @@
 .goo-outer {
     display: none;
 }
+
 /* =============================================
                 Scrollbar Style
 ============================================= */
@@ -689,6 +791,12 @@ footer p span{
     font-weight: 700;
     line-height: 1.2!important;
 }
+.right{
+    text-align: right;
+}
+.right .cmt{
+    text-align: right;
+}
 .apr-count-l .cmt, .apr-count-r .cmt{
     font-size: 60px;
     font-family: 'Georgia',sans-serif;
@@ -722,6 +830,7 @@ footer p span{
 }
 .abt-body .apr-box .pst,.abt-body .apr-box .cmt{
     text-align: center;
+    text-transform: capitalize;
 }
 
 /* =============================================
@@ -768,7 +877,7 @@ footer p span{
                 MENU BAR
 ============================================= */
 header{
-    padding: 20px 0px;
+    padding: 15px 0px;
 }
 .nav-item .hover-ani{
     font-size: 18px;
@@ -786,8 +895,21 @@ header .btn-custom::after, header .btn-custom::before{
     display: none;
 }
 header .btn-custom{
-    padding: 8px 20px;
+    padding: 10px 20px;
     margin-left: 15px;
+    background: #de2b24;
+    border: none;
+    color: white!important;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+header .btn-custom:hover{
+    border: none;
+    background: #f8cd53;
+    color: #222222!important;
 }
 .dot{
     position: relative;
@@ -804,4 +926,3664 @@ header .btn-custom{
 }
 .dot:last-child::before{
     right: -12%;
+}
+
+
+/* =============================================
+                TOP CONTACT
+============================================= */
+.top-contact{
+    padding: 10px 0px;
+    background: #f0f2f4;
+}
+.contact-list{
+    align-items: center;
+    justify-content:end;
+}
+.contact-list li{
+    margin: 0px 10px;
+}
+.contact-list li p{
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'HelveticaNormal',sans-serif;
+    margin: 0;
+}
+.contact-list li p i{
+    margin-right: 10px!important;
+}
+.contact-list li a {
+    font-size: 20px;
+}
+
+
+
+/* =============================================
+                MEDIA QUERY
+============================================= */
+@media(max-width: 1920px){
+    .wrk-body .col-6, .wrk-body .col-sm-6, .wrk-body .col-lg-3, .wrk-body .col-md-3{
+        padding: 0px!important;
+    }
+}
+@media(max-width: 1440px){
+    footer p{
+        font-size: 14px;
+        padding: 10px;
+    }
+    
+    .gt-touch{
+        padding: 45px 0px;
+    }
+    .cmt{
+        font-size: 26px;
+    }
+    .ss-icon{
+        margin: 20px 0px;
+    }
+    .ss-icon ul li{
+        height: 40px;
+        width: 40px;
+        margin-right: 16px;
+        line-height: 10px;
+        font-size: 15px;
+        border-radius: 5px;
+    }
+    .content .pst{
+        font-size: 15px;
+    }
+    .gt-touch .content{
+        margin-bottom: 20px;
+    }
+    .form-group{
+        margin-bottom: 20px;
+    }
+    .gt-touch .frm-content .form-control{
+        font-size: 15px;
+    }
+    .btn-custom{
+        padding: 10px 25px;
+        font-size: 14px;
+    }
+    .analysis{
+        padding: 50px 0px;
+    }
+    .analysis .cmt{
+        font-size: 24px;
+    }
+    .dropdown-form-cont{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .btn-form{
+        padding: 10px;
+        height: 40px;
+        width: 40px;
+        font-size: 15px;
+        line-height: 10px;
+    }
+    .drop-form{
+        margin-top: 30px;
+        padding: 25px;
+    }
+    .form-dp{
+        margin-top: 20px;
+    }
+    .drop-form .form-control{
+        height: auto;
+        padding: 8px 10px;
+    }
+    .drop-form input::placeholder{
+        font-size: 14px;
+    }
+    .drop-form .btn-custom{
+        margin-top: 20px;
+        padding: 8px 20px;
+    }
+    .drop-form .btn-close{
+        height: 30px;
+        width: 30px;
+        transform: translate(40%,-45%);
+        font-size: 14px;
+        line-height: 10px;
+        padding: 8px;
+    }
+    .drop-form::before{
+        border-left: 30px solid transparent;
+        border-right: 30px solid transparent;
+        border-bottom: 20px solid white;
+    }
+    .wrk-body{
+        padding: 50px 15px;
+    }
+    .wrk-body .content{
+        padding-bottom: 35px;
+    }
+    .prj-con .pjt{
+        font-size: 22px;
+        margin-top: 10px;
+    }
+    .pjd{
+        font-size: 16px;
+    }
+    .pjt-ic{
+        font-size: 28px;
+    }
+    .dsb{
+        margin-top: 15px;
+    }
+    .wrk-body .col-6{
+        padding: 0px;
+    }
+    .apr-body{
+        padding: 50px 0px;
+        background: #f3f3f3;
+    }
+    .apr-body .dsb,.abt-body .dsb{
+        background: rgb(29, 29, 29);
+    }
+    .apr-box{
+        margin-top: 15px;
+    }
+    .apr-box-body{
+        padding: 0px 15px;
+        padding-top: 15px;
+    }
+    .apr-box-body .cmt{
+        font-size: 18px;
+        text-align: left;
+        margin-bottom: 10px;
+    }
+    .apr-count-l{
+        transform: translate(-80%,35%);
+        height: 70px;
+        width: 70px;
+    }   
+    .apr-count-r{
+        transform: translate(75%, 35%);
+        height: 70px;
+        width: 70px;
+    }
+    .rd-3{
+        font-size: 30px!important;
+    }
+    .right{
+        text-align: right;
+    }
+    .right .cmt{
+        text-align: right;
+    }
+    .apr-count-l .cmt, .apr-count-r .cmt{
+        font-size: 38px;
+    }
+    .apr-count-l .pst, .apr-count-r .pst{
+        font-size: 16px;
+    }
+    .blg-con{
+        margin-top: 25px;
+    }
+    .blg-con .col-sm-6:last-child{
+        margin: auto;
+    }
+    .abt-body{
+        padding: 40px 0px;
+    }
+    .abt-body .apr-box-body{
+        margin-top: 20px;
+    }
+    .banner{
+        min-height: 30vh;
+    }
+    .banner-con{
+        min-height: 70vh;
+    }
+    .banner .cmt{
+        font-size: 34px;
+    }
+    .banner .pst{
+        font-size: 18px;
+    }
+    .banner .btn-custom{
+        font-size: 16px;
+        padding: 8px 15px;
+    }
+    header{
+        padding: 10px 0px;
+    }
+    .nav-item .hover-ani{
+        font-size: 16px;
+    }
+    header .btn-custom{
+        padding: 8px 15px;
+        margin-left: 0px;
+    }
+    .dot{
+        position: relative;
+    }
+    .dot::before{
+        display: block;
+        height: 6px;
+        width: 6px;
+        top: 45%;
+    }
+    .top-contact{
+        padding: 10px 0px;
+    }
+    .contact-list{
+        justify-content:center;
+    }
+    .contact-list li p{
+        font-size: 14px;
+    }
+    .contact-list li a {
+        font-size: 18px;
+    }
+    .navbar-brand{
+        max-width: 160px;
+    }
+}
+@media(max-width:1360px){
+    footer p{
+        font-size: 14px;
+        padding: 10px;
+    }
+    
+    .gt-touch{
+        padding: 45px 0px;
+    }
+    .cmt{
+        font-size: 26px;
+    }
+    .ss-icon{
+        margin: 20px 0px;
+    }
+    .ss-icon ul li{
+        height: 40px;
+        width: 40px;
+        margin-right: 16px;
+        line-height: 10px;
+        font-size: 15px;
+        border-radius: 5px;
+    }
+    .content .pst{
+        font-size: 15px;
+    }
+    .gt-touch .content{
+        margin-bottom: 20px;
+    }
+    .form-group{
+        margin-bottom: 20px;
+    }
+    .gt-touch .frm-content .form-control{
+        font-size: 15px;
+    }
+    .btn-custom{
+        padding: 10px 25px;
+        font-size: 14px;
+    }
+    .analysis{
+        padding: 50px 0px;
+    }
+    .analysis .cmt{
+        font-size: 24px;
+    }
+    .dropdown-form-cont{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .btn-form{
+        padding: 10px;
+        height: 40px;
+        width: 40px;
+        font-size: 15px;
+        line-height: 10px;
+    }
+    .drop-form{
+        margin-top: 30px;
+        padding: 25px;
+    }
+    .form-dp{
+        margin-top: 20px;
+    }
+    .drop-form .form-control{
+        height: auto;
+        padding: 8px 10px;
+    }
+    .drop-form input::placeholder{
+        font-size: 14px;
+    }
+    .drop-form .btn-custom{
+        margin-top: 20px;
+        padding: 8px 20px;
+    }
+    .drop-form .btn-close{
+        height: 30px;
+        width: 30px;
+        transform: translate(40%,-45%);
+        font-size: 14px;
+        line-height: 10px;
+        padding: 8px;
+    }
+    .drop-form::before{
+        border-left: 30px solid transparent;
+        border-right: 30px solid transparent;
+        border-bottom: 20px solid white;
+    }
+    .wrk-body{
+        padding: 50px 15px;
+    }
+    .wrk-body .content{
+        padding-bottom: 35px;
+    }
+    .prj-con .pjt{
+        font-size: 22px;
+        margin-top: 10px;
+    }
+    .pjd{
+        font-size: 16px;
+    }
+    .pjt-ic{
+        font-size: 28px;
+    }
+    .dsb{
+        margin-top: 15px;
+    }
+    .wrk-body .col-6{
+        padding: 0px;
+    }
+    .apr-body{
+        padding: 50px 0px;
+        background: #f3f3f3;
+    }
+    .apr-body .dsb,.abt-body .dsb{
+        background: rgb(29, 29, 29);
+    }
+    .apr-box{
+        margin-top: 15px;
+    }
+    .apr-box-body{
+        padding: 0px 15px;
+        padding-top: 15px;
+    }
+    .apr-box-body .cmt{
+        font-size: 18px;
+        text-align: left;
+        margin-bottom: 10px;
+    }
+    .apr-count-l{
+        transform: translate(-80%,35%);
+        height: 70px;
+        width: 70px;
+    }   
+    .apr-count-r{
+        transform: translate(75%, 35%);
+        height: 70px;
+        width: 70px;
+    }
+    .rd-3{
+        font-size: 30px!important;
+    }
+    .right{
+        text-align: right;
+    }
+    .right .cmt{
+        text-align: right;
+    }
+    .apr-count-l .cmt, .apr-count-r .cmt{
+        font-size: 38px;
+    }
+    .apr-count-l .pst, .apr-count-r .pst{
+        font-size: 16px;
+    }
+    .blg-con{
+        margin-top: 25px;
+    }
+    .blg-con .col-sm-6:last-child{
+        margin: auto;
+    }
+    .abt-body{
+        padding: 40px 0px;
+    }
+    .abt-body .apr-box-body{
+        margin-top: 20px;
+    }
+    .banner{
+        min-height: 30vh;
+    }
+    .banner-con{
+        min-height: 70vh;
+    }
+    .banner .cmt{
+        font-size: 34px;
+    }
+    .banner .pst{
+        font-size: 18px;
+    }
+    .banner .btn-custom{
+        font-size: 16px;
+        padding: 8px 15px;
+    }
+    header{
+        padding: 10px 0px;
+    }
+    .nav-item .hover-ani{
+        font-size: 16px;
+    }
+    header .btn-custom{
+        padding: 8px 15px;
+        margin-left: 0px;
+    }
+    .dot{
+        position: relative;
+    }
+    .dot::before{
+        display: block;
+        height: 8px;
+        width: 8px;
+        top: 45%;
+    }
+    .top-contact{
+        padding: 10px 0px;
+    }
+    .contact-list{
+        justify-content:center;
+    }
+    .contact-list li p{
+        font-size: 14px;
+    }
+    .contact-list li a {
+        font-size: 18px;
+    }
+    .navbar-brand{
+        max-width: 160px;
+    }
+}
+@media(max-width:1260px){
+    footer p{
+        font-size: 14px;
+        padding: 10px;
+    }
+    
+    .gt-touch{
+        padding: 70px 0px;
+    }
+    .cmt{
+        font-size: 32px;
+    }
+    .ss-icon{
+        margin: 20px 0px;
+    }
+    .ss-icon ul li{
+        height: 40px;
+        width: 40px;
+        margin-right: 16px;
+        line-height: 10px;
+        font-size: 15px;
+        border-radius: 5px;
+    }
+    .content .pst{
+        font-size: 20px;
+    }
+    .gt-touch .content{
+        margin-bottom: 20px;
+    }
+    .form-group{
+        margin-bottom: 20px;
+    }
+    .gt-touch .frm-content .form-control{
+        font-size: 15px;
+    }
+    .btn-custom{
+        padding: 10px 25px;
+        font-size: 14px;
+    }
+    .analysis{
+        padding: 70px 0px;
+    }
+    .analysis .cmt{
+        font-size: 24px;
+    }
+    .dropdown-form-cont{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .btn-form{
+        padding: 10px;
+        height: 40px;
+        width: 40px;
+        font-size: 15px;
+        line-height: 10px;
+    }
+    .drop-form{
+        margin-top: 30px;
+        padding: 25px;
+    }
+    .form-dp{
+        margin-top: 20px;
+    }
+    .drop-form .form-control{
+        height: auto;
+        padding: 8px 10px;
+    }
+    .drop-form input::placeholder{
+        font-size: 14px;
+    }
+    .drop-form .btn-custom{
+        margin-top: 20px;
+        padding: 8px 20px;
+    }
+    .drop-form .btn-close{
+        height: 30px;
+        width: 30px;
+        transform: translate(40%,-45%);
+        font-size: 14px;
+        line-height: 10px;
+        padding: 8px;
+    }
+    .drop-form::before{
+        border-left: 30px solid transparent;
+        border-right: 30px solid transparent;
+        border-bottom: 20px solid white;
+    }
+    .wrk-body{
+        padding: 80px 15px;
+    }
+    .wrk-body .content{
+        padding-bottom: 35px;
+    }
+    .prj-con .pjt{
+        font-size: 22px;
+        margin-top: 10px;
+    }
+    .pjd{
+        font-size: 16px;
+    }
+    .pjt-ic{
+        font-size: 28px;
+    }
+    .dsb{
+        margin-top: 15px;
+    }
+    .wrk-body .col-6{
+        padding: 0px;
+    }
+    .apr-body{
+        padding: 70px 0px;
+        background: #f3f3f3;
+    }
+    .apr-body .dsb,.abt-body .dsb{
+        background: rgb(29, 29, 29);
+    }
+    .apr-box{
+        margin-top: 15px;
+    }
+    .apr-box-body{
+        padding: 0px 15px;
+        padding-top: 15px;
+    }
+    .apr-box-body .cmt{
+        font-size: 18px;
+        text-align: left;
+        margin-bottom: 10px;
+    }
+    .apr-count-l{
+        transform: translate(-80%,35%);
+        height: 70px;
+        width: 70px;
+    }   
+    .apr-count-r{
+        transform: translate(75%, 35%);
+        height: 70px;
+        width: 70px;
+    }
+    .rd-3{
+        font-size: 30px!important;
+    }
+    .right{
+        text-align: right;
+    }
+    .right .cmt{
+        text-align: right;
+    }
+    .apr-count-l .cmt, .apr-count-r .cmt{
+        font-size: 38px;
+    }
+    .apr-count-l .pst, .apr-count-r .pst{
+        font-size: 16px;
+    }
+    .blg-con{
+        margin-top: 25px;
+    }
+    .blg-con .col-sm-6:last-child{
+        margin: auto;
+    }
+    .abt-body{
+        padding: 70px 0px;
+    }
+    .abt-body .apr-box-body{
+        margin-top: 20px;
+    }
+    .banner{
+        min-height: 30vh;
+    }
+    .banner-con{
+        min-height: 70vh;
+    }
+    .banner .cmt{
+        font-size: 40px;
+    }
+    .banner .pst{
+        font-size: 22px;
+    }
+    .banner .btn-custom{
+        font-size: 20px;
+        padding: 12px 22px;
+    }
+    header{
+        padding: 10px 0px;
+    }
+    .nav-item .hover-ani{
+        font-size: 16px;
+    }
+    header .btn-custom{
+        padding: 8px 15px;
+        margin-left: 0px;
+    }
+    .dot{
+        position: relative;
+    }
+    .dot::before{
+        display: block;
+        height: 5px;
+        width: 5px;
+        top: 45%;
+    }
+    .top-contact{
+        padding: 10px 0px;
+    }
+    .contact-list{
+        justify-content:center;
+    }
+    .contact-list li p{
+        font-size: 14px;
+    }
+    .contact-list li a {
+        font-size: 18px;
+    }
+    .navbar-brand{
+        max-width: 160px;
+    }
+}
+@media(max-width: 1199px){
+    footer p{
+        font-size: 16px;
+        padding: 10px;
+    }
+    
+    .gt-touch{
+        padding: 45px 0px;
+    }
+    .cmt{
+        font-size: 34px;
+    }
+    .ss-icon{
+        margin: 20px 0px;
+    }
+    .ss-icon ul li{
+        height: 40px;
+        width: 40px;
+        margin-right: 16px;
+        line-height: 10px;
+        font-size: 15px;
+        border-radius: 5px;
+    }
+    .content .pst{
+        font-size: 18px;
+    }
+    .gt-touch .content{
+        margin-bottom: 20px;
+    }
+    .form-group{
+        margin-bottom: 20px;
+    }
+    .gt-touch .frm-content .form-control{
+        font-size: 15px;
+    }
+    .btn-custom{
+        padding: 10px 25px;
+        font-size: 14px;
+    }
+    .analysis{
+        padding: 50px 0px;
+    }
+    .analysis .cmt{
+        font-size: 24px;
+    }
+    .dropdown-form-cont{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .btn-form{
+        padding: 10px;
+        height: 40px;
+        width: 40px;
+        font-size: 15px;
+        line-height: 10px;
+    }
+    .drop-form{
+        margin-top: 30px;
+        padding: 25px;
+    }
+    .form-dp{
+        margin-top: 20px;
+    }
+    .drop-form .form-control{
+        height: auto;
+        padding: 8px 10px;
+    }
+    .drop-form input::placeholder{
+        font-size: 14px;
+    }
+    .drop-form .btn-custom{
+        margin-top: 20px;
+        padding: 8px 20px;
+    }
+    .drop-form .btn-close{
+        height: 30px;
+        width: 30px;
+        transform: translate(40%,-45%);
+        font-size: 14px;
+        line-height: 10px;
+        padding: 8px;
+    }
+    .drop-form::before{
+        border-left: 30px solid transparent;
+        border-right: 30px solid transparent;
+        border-bottom: 20px solid white;
+    }
+    .wrk-body{
+        padding: 50px 15px;
+    }
+    .wrk-body .content{
+        padding-bottom: 35px;
+    }
+    .prj-con .pjt{
+        font-size: 22px;
+        margin-top: 10px;
+    }
+    .pjd{
+        font-size: 16px;
+    }
+    .pjt-ic{
+        font-size: 28px;
+    }
+    .dsb{
+        margin-top: 15px;
+    }
+    .wrk-body .col-6{
+        padding: 0px;
+    }
+    .apr-body{
+        padding: 50px 0px;
+        background: #f3f3f3;
+    }
+    .apr-body .dsb,.abt-body .dsb{
+        background: rgb(29, 29, 29);
+    }
+    .apr-box{
+        margin-top: 15px;
+    }
+    .apr-box-body{
+        padding: 0px 15px;
+        padding-top: 15px;
+    }
+    .apr-box-body .cmt{
+        font-size: 18px;
+        text-align: left;
+        margin-bottom: 10px;
+    }
+    .apr-count-l{
+        transform: translate(-80%,35%);
+        height: 70px;
+        width: 70px;
+    }   
+    .apr-count-r{
+        transform: translate(75%, 35%);
+        height: 70px;
+        width: 70px;
+    }
+    .rd-3{
+        font-size: 30px!important;
+    }
+    .right{
+        text-align: right;
+    }
+    .right .cmt{
+        text-align: right;
+    }
+    .apr-count-l .cmt, .apr-count-r .cmt{
+        font-size: 38px;
+    }
+    .apr-count-l .pst, .apr-count-r .pst{
+        font-size: 16px;
+    }
+    .blg-con{
+        margin-top: 25px;
+    }
+    .blg-con .col-sm-6:last-child{
+        margin: auto;
+    }
+    .abt-body{
+        padding: 40px 0px;
+    }
+    .abt-body .apr-box-body{
+        margin-top: 20px;
+    }
+    .banner{
+        min-height: 30vh;
+    }
+    .banner-con{
+        min-height: 70vh;
+    }
+    .banner .cmt{
+        font-size: 40px;
+    }
+    .banner .pst{
+        font-size: 20px;
+    }
+    .banner .btn-custom{
+        font-size: 20px;
+        padding: 10px 20px;
+    }
+    header{
+        padding: 10px 0px;
+    }
+    .nav-item .hover-ani{
+        font-size: 15px;
+    }
+    header .btn-custom{
+        padding: 8px 15px;
+        margin-left: 0px;
+    }
+    .dot{
+        position: relative;
+    }
+    .dot::before{
+        display: block;
+        height: 5px;
+        width: 5px;
+        top: 45%;
+    }
+    .top-contact{
+        padding: 10px 0px;
+    }
+    .contact-list{
+        justify-content:center;
+    }
+    .contact-list li p{
+        font-size: 14px;
+    }
+    .contact-list li a {
+        font-size: 18px;
+    }
+    .navbar-brand{
+        max-width: 160px;
+    }
+}
+@media(max-width: 1066px){
+    footer p{
+        font-size: 14px;
+        padding: 10px;
+    }
+    
+    .gt-touch{
+        padding: 45px 0px;
+    }
+    .cmt{
+        font-size: 26px;
+    }
+    .ss-icon{
+        margin: 20px 0px;
+    }
+    .ss-icon ul li{
+        height: 40px;
+        width: 40px;
+        margin-right: 16px;
+        line-height: 10px;
+        font-size: 15px;
+        border-radius: 5px;
+    }
+    .content .pst{
+        font-size: 15px;
+    }
+    .gt-touch .content{
+        margin-bottom: 20px;
+    }
+    .form-group{
+        margin-bottom: 20px;
+    }
+    .gt-touch .frm-content .form-control{
+        font-size: 15px;
+    }
+    .btn-custom{
+        padding: 10px 25px;
+        font-size: 14px;
+    }
+    .analysis{
+        padding: 50px 0px;
+    }
+    .analysis .cmt{
+        font-size: 24px;
+    }
+    .dropdown-form-cont{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .btn-form{
+        padding: 10px;
+        height: 40px;
+        width: 40px;
+        font-size: 15px;
+        line-height: 10px;
+    }
+    .drop-form{
+        margin-top: 30px;
+        padding: 25px;
+    }
+    .form-dp{
+        margin-top: 20px;
+    }
+    .drop-form .form-control{
+        height: auto;
+        padding: 8px 10px;
+    }
+    .drop-form input::placeholder{
+        font-size: 14px;
+    }
+    .drop-form .btn-custom{
+        margin-top: 20px;
+        padding: 8px 20px;
+    }
+    .drop-form .btn-close{
+        height: 30px;
+        width: 30px;
+        transform: translate(40%,-45%);
+        font-size: 14px;
+        line-height: 10px;
+        padding: 8px;
+    }
+    .drop-form::before{
+        border-left: 30px solid transparent;
+        border-right: 30px solid transparent;
+        border-bottom: 20px solid white;
+    }
+    .wrk-body{
+        padding: 50px 15px;
+    }
+    .wrk-body .content{
+        padding-bottom: 35px;
+    }
+    .prj-con .pjt{
+        font-size: 22px;
+        margin-top: 10px;
+    }
+    .pjd{
+        font-size: 16px;
+    }
+    .pjt-ic{
+        font-size: 28px;
+    }
+    .dsb{
+        margin-top: 15px;
+    }
+    .wrk-body .col-6{
+        padding: 0px;
+    }
+    .apr-body{
+        padding: 50px 0px;
+        background: #f3f3f3;
+    }
+    .apr-body .dsb,.abt-body .dsb{
+        background: rgb(29, 29, 29);
+    }
+    .apr-box{
+        margin-top: 15px;
+    }
+    .apr-box-body{
+        padding: 0px 15px;
+        padding-top: 15px;
+    }
+    .apr-box-body .cmt{
+        font-size: 18px;
+        text-align: left;
+        margin-bottom: 10px;
+    }
+    .apr-count-l{
+        transform: translate(-80%,35%);
+        height: 70px;
+        width: 70px;
+    }   
+    .apr-count-r{
+        transform: translate(75%, 35%);
+        height: 70px;
+        width: 70px;
+    }
+    .rd-3{
+        font-size: 30px!important;
+    }
+    .right{
+        text-align: right;
+    }
+    .right .cmt{
+        text-align: right;
+    }
+    .apr-count-l .cmt, .apr-count-r .cmt{
+        font-size: 38px;
+    }
+    .apr-count-l .pst, .apr-count-r .pst{
+        font-size: 16px;
+    }
+    .blg-con{
+        margin-top: 25px;
+    }
+    .blg-con .col-sm-6:last-child{
+        margin: auto;
+    }
+    .abt-body{
+        padding: 40px 0px;
+    }
+    .abt-body .apr-box-body{
+        margin-top: 20px;
+    }
+    .banner{
+        min-height: 30vh;
+    }
+    .banner-con{
+        min-height: 70vh;
+    }
+    .banner .cmt{
+        font-size: 34px;
+    }
+    .banner .pst{
+        font-size: 18px;
+    }
+    .banner .btn-custom{
+        font-size: 16px;
+        padding: 8px 15px;
+    }
+    header{
+        padding: 10px 0px;
+    }
+    .nav-item .hover-ani{
+        font-size: 15px;
+    }
+    header .btn-custom{
+        padding: 8px 15px;
+        margin-left: 0px;
+    }
+    .dot{
+        position: relative;
+    }
+    .dot::before{
+        display: none;
+    }
+    .top-contact{
+        padding: 10px 0px;
+    }
+    .contact-list{
+        justify-content:center;
+    }
+    .contact-list li p{
+        font-size: 14px;
+    }
+    .contact-list li a {
+        font-size: 18px;
+    }
+    .navbar-brand{
+        max-width: 160px;
+    }
+}
+@media(max-width: 991px){
+    footer p{
+        font-size: 18px;
+        padding: 10px;
+    }
+    
+    .gt-touch{
+        padding: 45px 0px;
+    }
+    .cmt{
+        font-size: 34px;
+    }
+    .ss-icon{
+        margin: 20px 0px;
+    }
+    .ss-icon ul li{
+        height: 40px;
+        width: 40px;
+        margin-right: 16px;
+        line-height: 10px;
+        font-size: 15px;
+        border-radius: 5px;
+    }
+    .content .pst{
+        font-size: 20px;
+    }
+    .gt-touch .content{
+        margin-bottom: 20px;
+    }
+    .form-group{
+        margin-bottom: 20px;
+    }
+    .gt-touch .frm-content .form-control{
+        font-size: 15px;
+    }
+    .btn-custom{
+        padding: 10px 25px;
+        font-size: 14px;
+    }
+    .analysis{
+        padding: 50px 0px;
+    }
+    .analysis .cmt{
+        font-size: 24px;
+    }
+    .dropdown-form-cont{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .btn-form{
+        padding: 10px;
+        height: 40px;
+        width: 40px;
+        font-size: 15px;
+        line-height: 10px;
+    }
+    .drop-form{
+        margin-top: 30px;
+        padding: 25px;
+    }
+    .form-dp{
+        margin-top: 20px;
+    }
+    .drop-form .form-control{
+        height: auto;
+        padding: 8px 10px;
+    }
+    .drop-form input::placeholder{
+        font-size: 14px;
+    }
+    .drop-form .btn-custom{
+        margin-top: 20px;
+        padding: 8px 20px;
+    }
+    .drop-form .btn-close{
+        height: 30px;
+        width: 30px;
+        transform: translate(40%,-45%);
+        font-size: 14px;
+        line-height: 10px;
+        padding: 8px;
+    }
+    .drop-form::before{
+        border-left: 30px solid transparent;
+        border-right: 30px solid transparent;
+        border-bottom: 20px solid white;
+    }
+    .wrk-body{
+        padding: 50px 15px;
+    }
+    .wrk-body .content{
+        padding-bottom: 35px;
+    }
+    .prj-con .pjt{
+        font-size: 22px;
+        margin-top: 10px;
+    }
+    .pjd{
+        font-size: 16px;
+    }
+    .pjt-ic{
+        font-size: 28px;
+    }
+    .dsb{
+        margin-top: 15px;
+    }
+    .wrk-body .col-6{
+        padding: 0px;
+    }
+    .apr-body{
+        padding: 50px 0px;
+        background: #f3f3f3;
+    }
+    .apr-body .dsb,.abt-body .dsb{
+        background: rgb(29, 29, 29);
+    }
+    .apr-box{
+        margin-top: 15px;
+    }
+    .apr-box-body{
+        padding: 0px 15px;
+        padding-top: 15px;
+    }
+    .apr-box-body .cmt{
+        font-size: 18px;
+        text-align: left;
+        margin-bottom: 10px;
+    }
+    .apr-count-l{
+        transform: translate(-80%,35%);
+        height: 70px;
+        width: 70px;
+    }   
+    .apr-count-r{
+        transform: translate(75%, 35%);
+        height: 70px;
+        width: 70px;
+    }
+    .rd-3{
+        font-size: 30px!important;
+    }
+    .right{
+        text-align: right;
+    }
+    .right .cmt{
+        text-align: right;
+    }
+    .apr-count-l .cmt, .apr-count-r .cmt{
+        font-size: 38px;
+    }
+    .apr-count-l .pst, .apr-count-r .pst{
+        font-size: 16px;
+    }
+    .blg-con{
+        margin-top: 25px;
+    }
+    .blg-con .col-sm-6:last-child{
+        margin: auto;
+    }
+    .abt-body{
+        padding: 40px 0px;
+    }
+    .abt-body .apr-box-body{
+        margin-top: 20px;
+    }
+    .banner{
+        min-height: 30vh;
+    }
+    .banner-con{
+        min-height: 70vh;
+    }
+    .banner .cmt{
+        font-size: 40px;
+    }
+    .banner .pst{
+        font-size: 24px;
+    }
+    .banner .btn-custom{
+        font-size: 20px;
+        padding: 10px 30px;
+    }
+    header{
+        padding: 10px 0px;
+    }
+    .nav-item .hover-ani{
+        font-size: 18px;
+        text-align: left;
+    }
+    header .btn-custom{
+        padding: 8px 15px;
+        margin-left: 0px;
+    }
+    .dot{
+        position: relative;
+    }
+    .dot::before{
+        display: none;
+    }
+    .top-contact{
+        padding: 10px 0px;
+    }
+    .contact-list{
+        justify-content:center;
+    }
+    .contact-list li p{
+        font-size: 14px;
+    }
+    .contact-list li a {
+        font-size: 18px;
+    }
+    .navbar-brand{
+        max-width: 160px;
+    }
+}
+@media(max-width:980px){
+    footer p{
+        font-size: 14px;
+        padding: 10px;
+    }
+    
+    .gt-touch{
+        padding: 45px 0px;
+    }
+    .cmt{
+        font-size: 26px;
+    }
+    .ss-icon{
+        margin: 20px 0px;
+    }
+    .ss-icon ul li{
+        height: 40px;
+        width: 40px;
+        margin-right: 16px;
+        line-height: 10px;
+        font-size: 15px;
+        border-radius: 5px;
+    }
+    .content .pst{
+        font-size: 15px;
+    }
+    .gt-touch .content{
+        margin-bottom: 20px;
+    }
+    .form-group{
+        margin-bottom: 20px;
+    }
+    .gt-touch .frm-content .form-control{
+        font-size: 15px;
+    }
+    .btn-custom{
+        padding: 10px 25px;
+        font-size: 14px;
+    }
+    .analysis{
+        padding: 50px 0px;
+    }
+    .analysis .cmt{
+        font-size: 24px;
+    }
+    .dropdown-form-cont{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .btn-form{
+        padding: 10px;
+        height: 40px;
+        width: 40px;
+        font-size: 15px;
+        line-height: 10px;
+    }
+    .drop-form{
+        margin-top: 30px;
+        padding: 25px;
+    }
+    .form-dp{
+        margin-top: 20px;
+    }
+    .drop-form .form-control{
+        height: auto;
+        padding: 8px 10px;
+    }
+    .drop-form input::placeholder{
+        font-size: 14px;
+    }
+    .drop-form .btn-custom{
+        margin-top: 20px;
+        padding: 8px 20px;
+    }
+    .drop-form .btn-close{
+        height: 30px;
+        width: 30px;
+        transform: translate(40%,-45%);
+        font-size: 14px;
+        line-height: 10px;
+        padding: 8px;
+    }
+    .drop-form::before{
+        border-left: 30px solid transparent;
+        border-right: 30px solid transparent;
+        border-bottom: 20px solid white;
+    }
+    .wrk-body{
+        padding: 50px 15px;
+    }
+    .wrk-body .content{
+        padding-bottom: 35px;
+    }
+    .prj-con .pjt{
+        font-size: 22px;
+        margin-top: 10px;
+    }
+    .pjd{
+        font-size: 16px;
+    }
+    .pjt-ic{
+        font-size: 28px;
+    }
+    .dsb{
+        margin-top: 15px;
+    }
+    .wrk-body .col-6{
+        padding: 0px;
+    }
+    .apr-body{
+        padding: 50px 0px;
+        background: #f3f3f3;
+    }
+    .apr-body .dsb,.abt-body .dsb{
+        background: rgb(29, 29, 29);
+    }
+    .apr-box{
+        margin-top: 15px;
+    }
+    .apr-box-body{
+        padding: 0px 15px;
+        padding-top: 15px;
+    }
+    .apr-box-body .cmt{
+        font-size: 18px;
+        text-align: left;
+        margin-bottom: 10px;
+    }
+    .apr-count-l{
+        transform: translate(-80%,35%);
+        height: 70px;
+        width: 70px;
+    }   
+    .apr-count-r{
+        transform: translate(75%, 35%);
+        height: 70px;
+        width: 70px;
+    }
+    .rd-3{
+        font-size: 30px!important;
+    }
+    .right{
+        text-align: right;
+    }
+    .right .cmt{
+        text-align: right;
+    }
+    .apr-count-l .cmt, .apr-count-r .cmt{
+        font-size: 38px;
+    }
+    .apr-count-l .pst, .apr-count-r .pst{
+        font-size: 16px;
+    }
+    .blg-con{
+        margin-top: 25px;
+    }
+    .blg-con .col-sm-6:last-child{
+        margin: auto;
+    }
+    .abt-body{
+        padding: 40px 0px;
+    }
+    .abt-body .apr-box-body{
+        margin-top: 20px;
+    }
+    .banner{
+        min-height: 30vh;
+    }
+    .banner-con{
+        min-height: 70vh;
+    }
+    .banner .cmt{
+        font-size: 34px;
+    }
+    .banner .pst{
+        font-size: 18px;
+    }
+    .banner .btn-custom{
+        font-size: 16px;
+        padding: 8px 15px;
+    }
+    header{
+        padding: 10px 0px;
+    }
+    .nav-item .hover-ani{
+        font-size: 18px;
+    }
+    header .btn-custom{
+        padding: 8px 15px;
+        margin-left: 0px;
+    }
+    .dot{
+        position: relative;
+    }
+    .dot::before{
+        display: none;
+    }
+    .top-contact{
+        padding: 10px 0px;
+    }
+    .contact-list{
+        justify-content:center;
+    }
+    .contact-list li p{
+        font-size: 14px;
+    }
+    .contact-list li a {
+        font-size: 18px;
+    }
+    .navbar-brand{
+        max-width: 160px;
+    }
+}
+@media(max-width:910px){
+    footer p{
+        font-size: 14px;
+        padding: 10px;
+    }
+    
+    .gt-touch{
+        padding: 45px 0px;
+    }
+    .cmt{
+        font-size: 30px;
+    }
+    .ss-icon{
+        margin: 20px 0px;
+    }
+    .ss-icon ul li{
+        height: 40px;
+        width: 40px;
+        margin-right: 16px;
+        line-height: 10px;
+        font-size: 15px;
+        border-radius: 5px;
+    }
+    .content .pst{
+        font-size: 18px;
+    }
+    .gt-touch .content{
+        margin-bottom: 20px;
+    }
+    .form-group{
+        margin-bottom: 20px;
+    }
+    .gt-touch .frm-content .form-control{
+        font-size: 15px;
+    }
+    .btn-custom{
+        padding: 10px 25px;
+        font-size: 14px;
+    }
+    .analysis{
+        padding: 50px 0px;
+    }
+    .analysis .cmt{
+        font-size: 24px;
+    }
+    .dropdown-form-cont{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .btn-form{
+        padding: 10px;
+        height: 40px;
+        width: 40px;
+        font-size: 15px;
+        line-height: 10px;
+    }
+    .drop-form{
+        margin-top: 30px;
+        padding: 25px;
+    }
+    .form-dp{
+        margin-top: 20px;
+    }
+    .drop-form .form-control{
+        height: auto;
+        padding: 8px 10px;
+    }
+    .drop-form input::placeholder{
+        font-size: 14px;
+    }
+    .drop-form .btn-custom{
+        margin-top: 20px;
+        padding: 8px 20px;
+    }
+    .drop-form .btn-close{
+        height: 30px;
+        width: 30px;
+        transform: translate(40%,-45%);
+        font-size: 14px;
+        line-height: 10px;
+        padding: 8px;
+    }
+    .drop-form::before{
+        border-left: 30px solid transparent;
+        border-right: 30px solid transparent;
+        border-bottom: 20px solid white;
+    }
+    .wrk-body{
+        padding: 50px 15px;
+    }
+    .wrk-body .content{
+        padding-bottom: 35px;
+    }
+    .prj-con .pjt{
+        font-size: 22px;
+        margin-top: 10px;
+    }
+    .pjd{
+        font-size: 16px;
+    }
+    .pjt-ic{
+        font-size: 28px;
+    }
+    .dsb{
+        margin-top: 15px;
+    }
+    .wrk-body .col-6{
+        padding: 0px;
+    }
+    .apr-body{
+        padding: 50px 0px;
+        background: #f3f3f3;
+    }
+    .apr-body .dsb,.abt-body .dsb{
+        background: rgb(29, 29, 29);
+    }
+    .apr-box{
+        margin-top: 15px;
+    }
+    .apr-box-body{
+        padding: 0px 15px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    .apr-box-body .cmt{
+        font-size: 18px;
+        text-align: left;
+        margin-bottom: 5px;
+    }
+    .apr-box-body .psd{
+        margin: 0;
+    }
+    .apr-count-l{
+        transform: translate(-80%,35%);
+        height: 70px;
+        width: 70px;
+    }   
+    .apr-count-r{
+        transform: translate(75%, 35%);
+        height: 70px;
+        width: 70px;
+    }
+    .rd-3{
+        font-size: 30px!important;
+    }
+    .right{
+        text-align: right;
+    }
+    .right .cmt{
+        text-align: right;
+    }
+    .apr-count-l .cmt, .apr-count-r .cmt{
+        font-size: 38px;
+    }
+    .apr-count-l .pst, .apr-count-r .pst{
+        font-size: 16px;
+    }
+    .blg-con{
+        margin-top: 25px;
+    }
+    .blg-con .col-sm-6:last-child{
+        margin: auto;
+    }
+    .abt-body{
+        padding: 40px 0px;
+    }
+    .abt-body .apr-box-body{
+        margin-top: 20px;
+    }
+    .banner{
+        min-height: 30vh;
+    }
+    .banner-con{
+        min-height: 70vh;
+    }
+    .banner .cmt{
+        font-size: 40px;
+    }
+    .banner .pst{
+        font-size: 24px;
+    }
+    .banner .btn-custom{
+        font-size: 18px;
+        padding: 10px 20px;
+    }
+    header{
+        padding: 10px 0px;
+    }
+    .nav-item .hover-ani{
+        font-size: 18px;
+    }
+    header .btn-custom{
+        padding: 8px 15px;
+        margin-left: 0px;
+    }
+    .dot{
+        position: relative;
+    }
+    .dot::before{
+        display: none;
+    }
+    .top-contact{
+        padding: 10px 0px;
+    }
+    .contact-list{
+        justify-content:center;
+    }
+    .contact-list li p{
+        font-size: 15px;
+    }
+    .contact-list li a {
+        font-size: 18px;
+    }
+    .navbar-brand{
+        max-width: 160px;
+    }
+}
+@media(max-width:850px){
+    footer p{
+        font-size: 14px;
+        padding: 10px;
+    }
+    
+    .gt-touch{
+        padding: 45px 0px;
+    }
+    .cmt{
+        font-size: 26px;
+    }
+    .ss-icon{
+        margin: 20px 0px;
+    }
+    .ss-icon ul li{
+        height: 40px;
+        width: 40px;
+        margin-right: 16px;
+        line-height: 10px;
+        font-size: 15px;
+        border-radius: 5px;
+    }
+    .content .pst{
+        font-size: 15px;
+    }
+    .gt-touch .content{
+        margin-bottom: 20px;
+    }
+    .form-group{
+        margin-bottom: 20px;
+    }
+    .gt-touch .frm-content .form-control{
+        font-size: 15px;
+    }
+    .btn-custom{
+        padding: 10px 25px;
+        font-size: 14px;
+    }
+    .analysis{
+        padding: 50px 0px;
+    }
+    .analysis .cmt{
+        font-size: 24px;
+    }
+    .dropdown-form-cont{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .btn-form{
+        padding: 10px;
+        height: 40px;
+        width: 40px;
+        font-size: 15px;
+        line-height: 10px;
+    }
+    .drop-form{
+        margin-top: 30px;
+        padding: 25px;
+    }
+    .form-dp{
+        margin-top: 20px;
+    }
+    .drop-form .form-control{
+        height: auto;
+        padding: 8px 10px;
+    }
+    .drop-form input::placeholder{
+        font-size: 14px;
+    }
+    .drop-form .btn-custom{
+        margin-top: 20px;
+        padding: 8px 20px;
+    }
+    .drop-form .btn-close{
+        height: 30px;
+        width: 30px;
+        transform: translate(40%,-45%);
+        font-size: 14px;
+        line-height: 10px;
+        padding: 8px;
+    }
+    .drop-form::before{
+        border-left: 30px solid transparent;
+        border-right: 30px solid transparent;
+        border-bottom: 20px solid white;
+    }
+    .wrk-body{
+        padding: 50px 15px;
+    }
+    .wrk-body .content{
+        padding-bottom: 35px;
+    }
+    .prj-con .pjt{
+        font-size: 22px;
+        margin-top: 10px;
+    }
+    .pjd{
+        font-size: 16px;
+    }
+    .pjt-ic{
+        font-size: 28px;
+    }
+    .dsb{
+        margin-top: 15px;
+    }
+    .wrk-body .col-6{
+        padding: 0px;
+    }
+    .apr-body{
+        padding: 50px 0px;
+        background: #f3f3f3;
+    }
+    .apr-body .dsb,.abt-body .dsb{
+        background: rgb(29, 29, 29);
+    }
+    .apr-box{
+        margin-top: 15px;
+    }
+    .apr-box-body{
+        padding: 0px 15px;
+        padding-top: 15px;
+    }
+    .apr-box-body .cmt{
+        font-size: 18px;
+        text-align: left;
+        margin-bottom: 10px;
+    }
+    .apr-count-l{
+        transform: translate(-80%,35%);
+        height: 70px;
+        width: 70px;
+    }   
+    .apr-count-r{
+        transform: translate(75%, 35%);
+        height: 70px;
+        width: 70px;
+    }
+    .rd-3{
+        font-size: 30px!important;
+    }
+    .right{
+        text-align: right;
+    }
+    .right .cmt{
+        text-align: right;
+    }
+    .apr-count-l .cmt, .apr-count-r .cmt{
+        font-size: 38px;
+    }
+    .apr-count-l .pst, .apr-count-r .pst{
+        font-size: 16px;
+    }
+    .blg-con{
+        margin-top: 25px;
+    }
+    .blg-con .col-sm-6:last-child{
+        margin: auto;
+    }
+    .abt-body{
+        padding: 40px 0px;
+    }
+    .abt-body .apr-box-body{
+        margin-top: 20px;
+    }
+    .banner{
+        min-height: 30vh;
+    }
+    .banner-con{
+        min-height: 80vh;
+    }
+    .banner .cmt{
+        font-size: 34px;
+    }
+    .banner .pst{
+        font-size: 18px;
+    }
+    .banner .btn-custom{
+        font-size: 16px;
+        padding: 8px 15px;
+    }
+    header{
+        padding: 10px 0px;
+    }
+    .nav-item .hover-ani{
+        font-size: 15px;
+    }
+    header .btn-custom{
+        padding: 8px 15px;
+        margin-left: 0px;
+    }
+    .dot{
+        position: relative;
+    }
+    .dot::before{
+        display: none;
+    }
+    .top-contact{
+        padding: 10px 0px;
+    }
+    .contact-list{
+        justify-content:center;
+    }
+    .contact-list li p{
+        font-size: 14px;
+    }
+    .contact-list li a {
+        font-size: 18px;
+    }
+    .navbar-brand{
+        max-width: 160px;
+    }
+}
+@media(max-width: 767px){
+    .apr-box-body .psd {
+        margin-bottom: 15px;
+    }
+    footer p{
+        font-size: 14px;
+        padding: 10px;
+    }
+    
+    .gt-touch{
+        padding: 45px 0px;
+    }
+    .cmt{
+        font-size: 26px;
+    }
+    .ss-icon{
+        margin: 20px 0px;
+    }
+    .ss-icon ul li{
+        height: 40px;
+        width: 40px;
+        margin-right: 16px;
+        line-height: 10px;
+        font-size: 15px;
+        border-radius: 5px;
+    }
+    .content .pst{
+        font-size: 15px;
+    }
+    .gt-touch .content{
+        margin-bottom: 20px;
+    }
+    .form-group{
+        margin-bottom: 20px;
+    }
+    .gt-touch .frm-content .form-control{
+        font-size: 15px;
+    }
+    .btn-custom{
+        padding: 10px 25px;
+        font-size: 14px;
+    }
+    .analysis{
+        padding: 50px 0px;
+    }
+    .analysis .cmt{
+        font-size: 24px;
+    }
+    .dropdown-form-cont{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .btn-form{
+        padding: 10px;
+        height: 40px;
+        width: 40px;
+        font-size: 15px;
+        line-height: 10px;
+    }
+    .drop-form{
+        margin-top: 30px;
+        padding: 25px;
+    }
+    .form-dp{
+        margin-top: 20px;
+    }
+    .drop-form .form-control{
+        height: auto;
+        padding: 8px 10px;
+    }
+    .drop-form input::placeholder{
+        font-size: 14px;
+    }
+    .drop-form .btn-custom{
+        margin-top: 20px;
+        padding: 8px 20px;
+    }
+    .drop-form .btn-close{
+        height: 30px;
+        width: 30px;
+        transform: translate(40%,-45%);
+        font-size: 14px;
+        line-height: 10px;
+        padding: 8px;
+    }
+    .drop-form::before{
+        border-left: 30px solid transparent;
+        border-right: 30px solid transparent;
+        border-bottom: 20px solid white;
+    }
+    .wrk-body{
+        padding: 50px 15px;
+    }
+    .wrk-body .content{
+        padding-bottom: 35px;
+    }
+    .prj-con .pjt{
+        font-size: 22px;
+        margin-top: 10px;
+    }
+    .pjd{
+        font-size: 16px;
+    }
+    .pjt-ic{
+        font-size: 28px;
+    }
+    .dsb{
+        margin-top: 15px;
+    }
+    .wrk-body .col-6{
+        padding: 0px;
+    }
+    .apr-body{
+        padding: 50px 0px;
+        background: #f3f3f3;
+    }
+    .apr-body .dsb,.abt-body .dsb{
+        background: rgb(29, 29, 29);
+    }
+    .apr-box{
+        margin-top: 15px;
+    }
+    .apr-box-body{
+        padding: 0px 15px;
+        padding-top: 15px;
+    }
+    .apr-box-body .cmt{
+        font-size: 18px;
+        text-align: left;
+        margin-bottom: 10px;
+    }
+    .apr-count-l{
+        transform: translate(50%,-250%);
+        height: 70px;
+        width: 70px;
+    }   
+    .apr-count-r{
+        transform: translate(-240%, 385%);
+        height: 70px;
+        width: 70px;
+    }
+    .rd-3{
+        font-size: 30px!important;
+    }
+    .right{
+        text-align: left;
+    }
+    .right .cmt{
+        text-align: left;
+    }
+    .apr-count-l .cmt, .apr-count-r .cmt{
+        font-size: 38px;
+    }
+    .apr-count-l .pst, .apr-count-r .pst{
+        font-size: 16px;
+    }
+    .blg-con{
+        margin-top: 25px;
+    }
+    .blg-con .col-sm-6:last-child{
+        margin: auto;
+    }
+    .abt-body{
+        padding: 40px 0px;
+    }
+    .abt-body .apr-box-body{
+        margin-top: 20px;
+    }
+    .banner{
+        min-height: 30vh;
+    }
+    .banner-con{
+        min-height: 70vh;
+    }
+    .banner .cmt{
+        font-size: 34px;
+    }
+    .banner .pst{
+        font-size: 18px;
+    }
+    .banner .btn-custom{
+        font-size: 16px;
+        padding: 8px 15px;
+    }
+    header{
+        padding: 10px 0px;
+    }
+    .nav-item .hover-ani{
+        font-size: 15px;
+    }
+    header .btn-custom{
+        padding: 8px 15px;
+        margin-left: 0px;
+    }
+    .dot{
+        position: relative;
+    }
+    .dot::before{
+        display: none;
+    }
+    .top-contact{
+        padding: 10px 0px;
+    }
+    .contact-list{
+        justify-content:center;
+    }
+    .contact-list li p{
+        font-size: 14px;
+    }
+    .contact-list li a {
+        font-size: 18px;
+    }
+    .navbar-brand{
+        max-width: 160px;
+    }
+}
+@media(max-width:672px){
+    footer p{
+        font-size: 14px;
+        padding: 10px;
+    }
+    
+    .gt-touch{
+        padding: 45px 0px;
+    }
+    .cmt{
+        font-size: 26px;
+    }
+    .ss-icon{
+        margin: 20px 0px;
+    }
+    .ss-icon ul li{
+        height: 40px;
+        width: 40px;
+        margin-right: 16px;
+        line-height: 10px;
+        font-size: 15px;
+        border-radius: 5px;
+    }
+    .content .pst{
+        font-size: 15px;
+    }
+    .gt-touch .content{
+        margin-bottom: 20px;
+    }
+    .form-group{
+        margin-bottom: 20px;
+    }
+    .gt-touch .frm-content .form-control{
+        font-size: 15px;
+    }
+    .btn-custom{
+        padding: 10px 25px;
+        font-size: 14px;
+    }
+    .analysis{
+        padding: 50px 0px;
+    }
+    .analysis .cmt{
+        font-size: 24px;
+    }
+    .dropdown-form-cont{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .btn-form{
+        padding: 10px;
+        height: 40px;
+        width: 40px;
+        font-size: 15px;
+        line-height: 10px;
+    }
+    .drop-form{
+        margin-top: 30px;
+        padding: 25px;
+    }
+    .form-dp{
+        margin-top: 20px;
+    }
+    .drop-form .form-control{
+        height: auto;
+        padding: 8px 10px;
+    }
+    .drop-form input::placeholder{
+        font-size: 14px;
+    }
+    .drop-form .btn-custom{
+        margin-top: 20px;
+        padding: 8px 20px;
+    }
+    .drop-form .btn-close{
+        height: 30px;
+        width: 30px;
+        transform: translate(40%,-45%);
+        font-size: 14px;
+        line-height: 10px;
+        padding: 8px;
+    }
+    .drop-form::before{
+        border-left: 30px solid transparent;
+        border-right: 30px solid transparent;
+        border-bottom: 20px solid white;
+    }
+    .wrk-body{
+        padding: 50px 15px;
+    }
+    .wrk-body .content{
+        padding-bottom: 35px;
+    }
+    .prj-con .pjt{
+        font-size: 22px;
+        margin-top: 10px;
+    }
+    .pjd{
+        font-size: 16px;
+    }
+    .pjt-ic{
+        font-size: 28px;
+    }
+    .dsb{
+        margin-top: 15px;
+    }
+    .wrk-body .col-6{
+        padding: 0px;
+    }
+    .apr-body{
+        padding: 50px 0px;
+        background: #f3f3f3;
+    }
+    .apr-body .dsb,.abt-body .dsb{
+        background: rgb(29, 29, 29);
+    }
+    .apr-box{
+        margin-top: 15px;
+    }
+    .apr-box-body{
+        padding: 0px 15px;
+        padding-top: 15px;
+    }
+    .apr-box-body .cmt{
+        font-size: 18px;
+        text-align: left;
+        margin-bottom: 10px;
+    }
+    .apr-count-l{
+        transform: translate(50%,-250%);
+        height: 70px;
+        width: 70px;
+    }   
+    .apr-count-r{
+        transform: translate(-240%, 385%);
+        height: 70px;
+        width: 70px;
+    }
+    .rd-3{
+        font-size: 30px!important;
+    }
+    .right{
+        text-align: left;
+    }
+    .right .cmt{
+        text-align: left;
+    }
+    .apr-count-l .cmt, .apr-count-r .cmt{
+        font-size: 38px;
+    }
+    .apr-count-l .pst, .apr-count-r .pst{
+        font-size: 16px;
+    }
+    .blg-con{
+        margin-top: 25px;
+    }
+    .blg-con .col-sm-6:last-child{
+        margin: auto;
+    }
+    .abt-body{
+        padding: 40px 0px;
+    }
+    .abt-body .apr-box-body{
+        margin-top: 20px;
+    }
+    .banner{
+        min-height: 30vh;
+    }
+    .banner-con{
+        min-height: 70vh;
+    }
+    .banner .cmt{
+        font-size: 34px;
+    }
+    .banner .pst{
+        font-size: 18px;
+    }
+    .banner .btn-custom{
+        font-size: 16px;
+        padding: 8px 15px;
+    }
+    header{
+        padding: 10px 0px;
+    }
+    .nav-item .hover-ani{
+        font-size: 15px;
+    }
+    header .btn-custom{
+        padding: 8px 15px;
+        margin-left: 0px;
+    }
+    .dot{
+        position: relative;
+    }
+    .dot::before{
+        display: none;
+    }
+    .top-contact{
+        padding: 10px 0px;
+    }
+    .contact-list{
+        justify-content:center;
+    }
+    .contact-list li p{
+        font-size: 14px;
+    }
+    .contact-list li a {
+        font-size: 18px;
+    }
+    .navbar-brand{
+        max-width: 160px;
+    }
+}
+@media (max-width: 575px){
+    footer p{
+        font-size: 14px;
+        padding: 10px;
+    }
+    
+    .gt-touch{
+        padding: 45px 0px;
+    }
+    .cmt{
+        font-size: 26px;
+    }
+    .ss-icon{
+        margin: 20px 0px;
+    }
+    .ss-icon ul li{
+        height: 40px;
+        width: 40px;
+        margin-right: 16px;
+        line-height: 10px;
+        font-size: 15px;
+        border-radius: 5px;
+    }
+    .content .pst{
+        font-size: 15px;
+    }
+    .gt-touch .content{
+        margin-bottom: 20px;
+    }
+    .form-group{
+        margin-bottom: 20px;
+    }
+    .gt-touch .frm-content .form-control{
+        font-size: 15px;
+    }
+    .btn-custom{
+        padding: 10px 25px;
+        font-size: 14px;
+    }
+    .analysis{
+        padding: 50px 0px;
+    }
+    .analysis .cmt{
+        font-size: 24px;
+    }
+    .dropdown-form-cont{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .btn-form{
+        padding: 10px;
+        height: 40px;
+        width: 40px;
+        font-size: 15px;
+        line-height: 10px;
+    }
+    .drop-form{
+        margin-top: 30px;
+        padding: 25px;
+    }
+    .form-dp{
+        margin-top: 20px;
+    }
+    .drop-form .form-control{
+        height: auto;
+        padding: 8px 10px;
+    }
+    .drop-form input::placeholder{
+        font-size: 14px;
+    }
+    .drop-form .btn-custom{
+        margin-top: 20px;
+        padding: 8px 20px;
+    }
+    .drop-form .btn-close{
+        height: 30px;
+        width: 30px;
+        transform: translate(40%,-45%);
+        font-size: 14px;
+        line-height: 10px;
+        padding: 8px;
+    }
+    .drop-form::before{
+        border-left: 30px solid transparent;
+        border-right: 30px solid transparent;
+        border-bottom: 20px solid white;
+    }
+    .wrk-body{
+        padding: 50px 15px;
+    }
+    .wrk-body .content{
+        padding-bottom: 35px;
+    }
+    .prj-con .pjt{
+        font-size: 14px;
+        margin-top: 10px;
+    }
+    .pjd{
+        font-size: 12px;
+    }
+    .pjt-ic{
+        font-size: 28px;
+    }
+    .dsb{
+        margin-top: 15px;
+    }
+    .wrk-body .col-6{
+        padding: 0px;
+    }
+    .apr-body{
+        padding: 50px 0px;
+        background: #f3f3f3;
+    }
+    .apr-body .dsb,.abt-body .dsb{
+        background: rgb(29, 29, 29);
+    }
+    .apr-box{
+        margin-top: 15px;
+    }
+    .apr-box-body{
+        padding: 0px 15px;
+        padding-top: 15px;
+    }
+    .apr-box-body .cmt{
+        font-size: 18px;
+        text-align: left;
+        margin-bottom: 10px;
+    }
+    .apr-count-l{
+        transform: translate(350%, -330%);
+        height: 70px;
+        width: 70px;
+    }   
+    .apr-count-r{
+        transform: translate(-350%, 400%);
+        height: 70px;
+        width: 70px;
+    }
+    .rd-3{
+        font-size: 30px!important;
+    }
+    .right{
+        text-align: left;
+    }
+    .right .cmt{
+        text-align: left;
+    }
+    .apr-count-l .cmt, .apr-count-r .cmt{
+        font-size: 38px;
+    }
+    .apr-count-l .pst, .apr-count-r .pst{
+        font-size: 16px;
+    }
+    .blg-con{
+        margin-top: 25px;
+    }
+    .abt-body{
+        padding: 40px 0px;
+    }
+    .abt-body .apr-box-body{
+        margin-top: 20px;
+    }
+    .banner{
+        min-height: 30vh;
+    }
+    .banner-con{
+        min-height: 70vh;
+    }
+    .banner .cmt{
+        font-size: 34px;
+    }
+    .banner .pst{
+        font-size: 18px;
+    }
+    .banner .btn-custom{
+        font-size: 16px;
+        padding: 8px 15px;
+    }
+    header{
+        padding: 10px 0px;
+    }
+    .nav-item .hover-ani{
+        font-size: 15px;
+    }
+    header .btn-custom{
+        padding: 8px 15px;
+        margin-left: 0px;
+    }
+    .dot{
+        position: relative;
+    }
+    .dot::before{
+        display: none;
+    }
+    .top-contact{
+        padding: 10px 0px;
+    }
+    .contact-list{
+        justify-content:center;
+    }
+    .contact-list li p{
+        font-size: 12px;
+    }
+    .contact-list li a {
+        font-size: 14px;
+    }
+    .navbar-brand{
+        max-width: 140px;
+    }
+}
+@media(max-width:520px){
+    footer p{
+        font-size: 14px;
+        padding: 10px;
+    }
+    
+    .gt-touch{
+        padding: 45px 0px;
+    }
+    .cmt{
+        font-size: 26px;
+    }
+    .ss-icon{
+        margin: 20px 0px;
+    }
+    .ss-icon ul li{
+        height: 40px;
+        width: 40px;
+        margin-right: 16px;
+        line-height: 10px;
+        font-size: 15px;
+        border-radius: 5px;
+    }
+    .content .pst{
+        font-size: 15px;
+    }
+    .gt-touch .content{
+        margin-bottom: 20px;
+    }
+    .form-group{
+        margin-bottom: 20px;
+    }
+    .gt-touch .frm-content .form-control{
+        font-size: 15px;
+    }
+    .btn-custom{
+        padding: 10px 25px;
+        font-size: 14px;
+    }
+    .analysis{
+        padding: 50px 0px;
+    }
+    .analysis .cmt{
+        font-size: 24px;
+    }
+    .dropdown-form-cont{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .btn-form{
+        padding: 10px;
+        height: 40px;
+        width: 40px;
+        font-size: 15px;
+        line-height: 10px;
+    }
+    .drop-form{
+        margin-top: 30px;
+        padding: 25px;
+    }
+    .form-dp{
+        margin-top: 20px;
+    }
+    .drop-form .form-control{
+        height: auto;
+        padding: 8px 10px;
+    }
+    .drop-form input::placeholder{
+        font-size: 14px;
+    }
+    .drop-form .btn-custom{
+        margin-top: 20px;
+        padding: 8px 20px;
+    }
+    .drop-form .btn-close{
+        height: 30px;
+        width: 30px;
+        transform: translate(40%,-45%);
+        font-size: 14px;
+        line-height: 10px;
+        padding: 8px;
+    }
+    .drop-form::before{
+        border-left: 30px solid transparent;
+        border-right: 30px solid transparent;
+        border-bottom: 20px solid white;
+    }
+    .wrk-body{
+        padding: 50px 15px;
+    }
+    .wrk-body .content{
+        padding-bottom: 35px;
+    }
+    .prj-con .pjt{
+        font-size: 14px;
+        margin-top: 10px;
+    }
+    .pjd{
+        font-size: 12px;
+    }
+    .pjt-ic{
+        font-size: 28px;
+    }
+    .dsb{
+        margin-top: 15px;
+    }
+    .wrk-body .col-6{
+        padding: 0px;
+    }
+    .apr-body{
+        padding: 50px 0px;
+        background: #f3f3f3;
+    }
+    .apr-body .dsb,.abt-body .dsb{
+        background: rgb(29, 29, 29);
+    }
+    .apr-box{
+        margin-top: 15px;
+    }
+    .apr-box-body{
+        padding: 0px 15px;
+        padding-top: 15px;
+    }
+    .apr-box-body .cmt{
+        font-size: 18px;
+        text-align: left;
+        margin-bottom: 10px;
+    }
+    .apr-count-l{
+        transform: translate(350%, -285%);
+        height: 65px;
+        width: 60px;
+    }   
+    .apr-count-r{
+        transform: translate(-350%, 445%);
+        height: 60px;
+        width: 60px;
+    }
+    .rd-3{
+        font-size: 30px!important;
+    }
+    .right{
+        text-align: left;
+    }
+    .right .cmt{
+        text-align: left;
+    }
+    .apr-count-l .cmt, .apr-count-r .cmt{
+        font-size: 30px;
+    }
+    .apr-count-l .pst, .apr-count-r .pst{
+        font-size: 16px;
+    }
+    .blg-con{
+        margin-top: 25px;
+    }
+    .abt-body{
+        padding: 40px 0px;
+    }
+    .abt-body .apr-box-body{
+        margin-top: 20px;
+    }
+    .banner{
+        min-height: 30vh;
+    }
+    .banner-con{
+        min-height: 70vh;
+    }
+    .banner .cmt{
+        font-size: 34px;
+    }
+    .banner .pst{
+        font-size: 18px;
+    }
+    .banner .btn-custom{
+        font-size: 16px;
+        padding: 8px 15px;
+    }
+    header{
+        padding: 10px 0px;
+    }
+    .nav-item .hover-ani{
+        font-size: 15px;
+    }
+    header .btn-custom{
+        padding: 8px 15px;
+        margin-left: 0px;
+    }
+    .dot{
+        position: relative;
+    }
+    .dot::before{
+        display: none;
+    }
+    .top-contact{
+        padding: 10px 0px;
+    }
+    .contact-list{
+        justify-content:center;
+    }
+    .contact-list li p{
+        font-size: 12px;
+    }
+    .contact-list li a {
+        font-size: 14px;
+    }
+    .navbar-brand{
+        max-width: 140px;
+    }
+}
+@media(max-width: 475px){
+    footer p{
+        font-size: 14px;
+        padding: 10px;
+    }
+    
+    .gt-touch{
+        padding: 45px 0px;
+    }
+    .cmt{
+        font-size: 26px;
+    }
+    .ss-icon{
+        margin: 20px 0px;
+    }
+    .ss-icon ul li{
+        height: 40px;
+        width: 40px;
+        margin-right: 16px;
+        line-height: 10px;
+        font-size: 15px;
+        border-radius: 5px;
+    }
+    .content .pst{
+        font-size: 15px;
+    }
+    .gt-touch .content{
+        margin-bottom: 20px;
+    }
+    .form-group{
+        margin-bottom: 20px;
+    }
+    .gt-touch .frm-content .form-control{
+        font-size: 15px;
+    }
+    .btn-custom{
+        padding: 10px 25px;
+        font-size: 14px;
+    }
+    .analysis{
+        padding: 50px 0px;
+    }
+    .analysis .cmt{
+        font-size: 24px;
+    }
+    .dropdown-form-cont{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .btn-form{
+        padding: 10px;
+        height: 40px;
+        width: 40px;
+        font-size: 15px;
+        line-height: 10px;
+    }
+    .drop-form{
+        margin-top: 30px;
+        padding: 25px;
+    }
+    .form-dp{
+        margin-top: 20px;
+    }
+    .drop-form .form-control{
+        height: auto;
+        padding: 8px 10px;
+    }
+    .drop-form input::placeholder{
+        font-size: 14px;
+    }
+    .drop-form .btn-custom{
+        margin-top: 20px;
+        padding: 8px 20px;
+    }
+    .drop-form .btn-close{
+        height: 30px;
+        width: 30px;
+        transform: translate(40%,-45%);
+        font-size: 14px;
+        line-height: 10px;
+        padding: 8px;
+    }
+    .drop-form::before{
+        border-left: 30px solid transparent;
+        border-right: 30px solid transparent;
+        border-bottom: 20px solid white;
+    }
+    .wrk-body{
+        padding: 50px 15px;
+    }
+    .wrk-body .content{
+        padding-bottom: 35px;
+    }
+    .prj-con .pjt{
+        font-size: 14px;
+        margin-top: 10px;
+    }
+    .pjd{
+        font-size: 12px;
+    }
+    .pjt-ic{
+        font-size: 28px;
+    }
+    .dsb{
+        margin-top: 15px;
+    }
+    .wrk-body .col-6{
+        padding: 0px;
+    }
+    .apr-body{
+        padding: 50px 0px;
+        background: #f3f3f3;
+    }
+    .apr-body .dsb,.abt-body .dsb{
+        background: rgb(29, 29, 29);
+    }
+    .apr-box{
+        margin-top: 15px;
+    }
+    .apr-box-body{
+        padding: 0px 15px;
+        padding-top: 15px;
+    }
+    .apr-box-body .cmt{
+        font-size: 18px;
+        text-align: left;
+        margin-bottom: 10px;
+    }
+    .apr-count-l{
+        transform: translate(350%, -285%);
+        height: 65px;
+        width: 60px;
+    }   
+    .apr-count-r{
+        transform: translate(-350%, 445%);
+        height: 60px;
+        width: 60px;
+    }
+    .rd-3{
+        font-size: 30px!important;
+    }
+    .right{
+        text-align: left;
+    }
+    .right .cmt{
+        text-align: left;
+    }
+    .apr-count-l .cmt, .apr-count-r .cmt{
+        font-size: 30px;
+    }
+    .apr-count-l .pst, .apr-count-r .pst{
+        font-size: 16px;
+    }
+    .blg-con{
+        margin-top: 25px;
+    }
+    .abt-body{
+        padding: 40px 0px;
+    }
+    .abt-body .apr-box-body{
+        margin-top: 20px;
+    }
+    .banner{
+        min-height: 30vh;
+    }
+    .banner-con{
+        min-height: 70vh;
+    }
+    .banner .cmt{
+        font-size: 34px;
+    }
+    .banner .pst{
+        font-size: 18px;
+    }
+    .banner .btn-custom{
+        font-size: 16px;
+        padding: 8px 15px;
+    }
+    header{
+        padding: 10px 0px;
+    }
+    .nav-item .hover-ani{
+        font-size: 15px;
+    }
+    header .btn-custom{
+        padding: 8px 15px;
+        margin-left: 0px;
+    }
+    .dot{
+        position: relative;
+    }
+    .dot::before{
+        display: none;
+    }
+    .top-contact{
+        padding: 10px 0px;
+    }
+    .contact-list{
+        justify-content:center;
+    }
+    .contact-list li p{
+        font-size: 12px;
+    }
+    .contact-list li a {
+        font-size: 14px;
+    }
+    .navbar-brand{
+        max-width: 140px;
+    }
+}
+@media(max-width:425px){
+    footer p{
+        font-size: 14px;
+        padding: 10px;
+    }
+    
+    .gt-touch{
+        padding: 45px 0px;
+    }
+    .cmt{
+        font-size: 26px;
+    }
+    .ss-icon{
+        margin: 20px 0px;
+    }
+    .ss-icon ul li{
+        height: 40px;
+        width: 40px;
+        margin-right: 16px;
+        line-height: 10px;
+        font-size: 15px;
+        border-radius: 5px;
+    }
+    .content .pst{
+        font-size: 15px;
+    }
+    .gt-touch .content{
+        margin-bottom: 20px;
+    }
+    .form-group{
+        margin-bottom: 20px;
+    }
+    .gt-touch .frm-content .form-control{
+        font-size: 15px;
+    }
+    .btn-custom{
+        padding: 10px 25px;
+        font-size: 14px;
+    }
+    .analysis{
+        padding: 50px 0px;
+    }
+    .analysis .cmt{
+        font-size: 24px;
+    }
+    .dropdown-form-cont{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .btn-form{
+        padding: 10px;
+        height: 40px;
+        width: 40px;
+        font-size: 15px;
+        line-height: 10px;
+    }
+    .drop-form{
+        margin-top: 30px;
+        padding: 25px;
+    }
+    .form-dp{
+        margin-top: 20px;
+    }
+    .drop-form .form-control{
+        height: auto;
+        padding: 8px 10px;
+    }
+    .drop-form input::placeholder{
+        font-size: 14px;
+    }
+    .drop-form .btn-custom{
+        margin-top: 20px;
+        padding: 8px 20px;
+    }
+    .drop-form .btn-close{
+        height: 30px;
+        width: 30px;
+        transform: translate(40%,-45%);
+        font-size: 14px;
+        line-height: 10px;
+        padding: 8px;
+    }
+    .drop-form::before{
+        border-left: 30px solid transparent;
+        border-right: 30px solid transparent;
+        border-bottom: 20px solid white;
+    }
+    .wrk-body{
+        padding: 50px 15px;
+    }
+    .wrk-body .content{
+        padding-bottom: 35px;
+    }
+    .prj-con .pjt{
+        font-size: 14px;
+        margin-top: 10px;
+    }
+    .pjd{
+        font-size: 12px;
+    }
+    .pjt-ic{
+        font-size: 28px;
+    }
+    .dsb{
+        margin-top: 15px;
+    }
+    .wrk-body .col-6{
+        padding: 0px;
+    }
+    .apr-body{
+        padding: 50px 0px;
+        background: #f3f3f3;
+    }
+    .apr-body .dsb,.abt-body .dsb{
+        background: rgb(29, 29, 29);
+    }
+    .apr-box{
+        margin-top: 15px;
+    }
+    .apr-box-body{
+        padding: 0px 15px;
+        padding-top: 15px;
+    }
+    .apr-box-body .cmt{
+        font-size: 18px;
+        text-align: left;
+        margin-bottom: 10px;
+    }
+    .apr-count-l{
+        transform: translate(300%, -285%);
+        height: 65px;
+        width: 60px;
+    }   
+    .apr-count-r{
+        transform: translate(-300%, 445%);
+        height: 60px;
+        width: 60px;
+    }
+    .rd-3{
+        font-size: 30px!important;
+    }
+    .right{
+        text-align: left;
+    }
+    .right .cmt{
+        text-align: left;
+    }
+    .apr-count-l .cmt, .apr-count-r .cmt{
+        font-size: 30px;
+    }
+    .apr-count-l .pst, .apr-count-r .pst{
+        font-size: 16px;
+    }
+    .blg-con{
+        margin-top: 25px;
+    }
+    .abt-body{
+        padding: 40px 0px;
+    }
+    .abt-body .apr-box-body{
+        margin-top: 20px;
+    }
+    .banner{
+        min-height: 30vh;
+    }
+    .banner-con{
+        min-height: 70vh;
+    }
+    .banner .cmt{
+        font-size: 34px;
+    }
+    .banner .pst{
+        font-size: 18px;
+    }
+    .banner .btn-custom{
+        font-size: 16px;
+        padding: 8px 15px;
+    }
+    header{
+        padding: 10px 0px;
+    }
+    .nav-item .hover-ani{
+        font-size: 15px;
+    }
+    header .btn-custom{
+        padding: 8px 15px;
+        margin-left: 0px;
+    }
+    .dot{
+        position: relative;
+    }
+    .dot::before{
+        display: none;
+    }
+    .top-contact{
+        padding: 10px 0px;
+    }
+    .contact-list{
+        justify-content:center;
+    }
+    .contact-list li p{
+        font-size: 12px;
+    }
+    .contact-list li a {
+        font-size: 14px;
+    }
+    .navbar-brand{
+        max-width: 140px;
+    }
+}
+@media(max-width: 375px){
+    footer p{
+        font-size: 14px;
+        padding: 10px;
+    }
+    
+    .gt-touch{
+        padding: 45px 0px;
+    }
+    .cmt{
+        font-size: 26px;
+    }
+    .ss-icon{
+        margin: 20px 0px;
+    }
+    .ss-icon ul li{
+        height: 40px;
+        width: 40px;
+        margin-right: 16px;
+        line-height: 10px;
+        font-size: 15px;
+        border-radius: 5px;
+    }
+    .content .pst{
+        font-size: 15px;
+    }
+    .gt-touch .content{
+        margin-bottom: 20px;
+    }
+    .form-group{
+        margin-bottom: 20px;
+    }
+    .gt-touch .frm-content .form-control{
+        font-size: 15px;
+    }
+    .btn-custom{
+        padding: 10px 25px;
+        font-size: 14px;
+    }
+    .analysis{
+        padding: 50px 0px;
+    }
+    .analysis .cmt{
+        font-size: 24px;
+    }
+    .dropdown-form-cont{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .btn-form{
+        padding: 10px;
+        height: 40px;
+        width: 40px;
+        font-size: 15px;
+        line-height: 10px;
+    }
+    .drop-form{
+        margin-top: 30px;
+        padding: 25px;
+    }
+    .form-dp{
+        margin-top: 20px;
+    }
+    .drop-form .form-control{
+        height: auto;
+        padding: 8px 10px;
+    }
+    .drop-form input::placeholder{
+        font-size: 14px;
+    }
+    .drop-form .btn-custom{
+        margin-top: 20px;
+        padding: 8px 20px;
+    }
+    .drop-form .btn-close{
+        height: 30px;
+        width: 30px;
+        transform: translate(40%,-45%);
+        font-size: 14px;
+        line-height: 10px;
+        padding: 8px;
+    }
+    .drop-form::before{
+        border-left: 30px solid transparent;
+        border-right: 30px solid transparent;
+        border-bottom: 20px solid white;
+    }
+    .wrk-body{
+        padding: 50px 15px;
+    }
+    .wrk-body .content{
+        padding-bottom: 35px;
+    }
+    .prj-con .pjt{
+        font-size: 14px;
+        margin-top: 10px;
+    }
+    .pjd{
+        font-size: 12px;
+    }
+    .pjt-ic{
+        font-size: 28px;
+    }
+    .dsb{
+        margin-top: 15px;
+    }
+    .wrk-body .col-6{
+        padding: 0px;
+    }
+    .apr-body{
+        padding: 50px 0px;
+        background: #f3f3f3;
+    }
+    .apr-body .dsb,.abt-body .dsb{
+        background: rgb(29, 29, 29);
+    }
+    .apr-box{
+        margin-top: 15px;
+    }
+    .apr-box-body{
+        padding: 0px 15px;
+        padding-top: 15px;
+    }
+    .apr-box-body .cmt{
+        font-size: 18px;
+        text-align: left;
+        margin-bottom: 10px;
+    }
+    .apr-count-l{
+        transform: translate(250%, -285%);
+        height: 65px;
+        width: 60px;
+    }
+    .apr-count-r{
+        transform: translate(-250%, 445%);
+        height: 60px;
+        width: 60px;
+    }
+    .rd-3{
+        font-size: 30px!important;
+    }
+    .right{
+        text-align: left;
+    }
+    .right .cmt{
+        text-align: left;
+    }
+    .apr-count-l .cmt, .apr-count-r .cmt{
+        font-size: 30px;
+    }
+    .apr-count-l .pst, .apr-count-r .pst{
+        font-size: 16px;
+    }
+    .blg-con{
+        margin-top: 25px;
+    }
+    .abt-body{
+        padding: 40px 0px;
+    }
+    .abt-body .apr-box-body{
+        margin-top: 20px;
+    }
+    .banner{
+        min-height: 30vh;
+    }
+    .banner-con{
+        min-height: 70vh;
+    }
+    .banner .cmt{
+        font-size: 34px;
+    }
+    .banner .pst{
+        font-size: 18px;
+    }
+    .banner .btn-custom{
+        font-size: 16px;
+        padding: 8px 15px;
+    }
+    header{
+        padding: 10px 0px;
+    }
+    .nav-item .hover-ani{
+        font-size: 15px;
+    }
+    header .btn-custom{
+        padding: 8px 15px;
+        margin-left: 0px;
+    }
+    .dot{
+        position: relative;
+    }
+    .dot::before{
+        display: none;
+    }
+    .top-contact{
+        padding: 10px 0px;
+    }
+    .contact-list{
+        justify-content:center;
+    }
+    .contact-list li p{
+        font-size: 12px;
+    }
+    .contact-list li a {
+        font-size: 14px;
+    }
+    .navbar-brand{
+        max-width: 140px;
+    }
+}
+@media (max-width: 320px){
+    footer p{
+        font-size: 14px;
+        padding: 10px;
+    }
+    
+    .gt-touch{
+        padding: 45px 0px;
+    }
+    .cmt{
+        font-size: 26px;
+    }
+    .ss-icon{
+        margin: 20px 0px;
+    }
+    .ss-icon ul li{
+        height: 40px;
+        width: 40px;
+        margin-right: 16px;
+        line-height: 10px;
+        font-size: 15px;
+        border-radius: 5px;
+    }
+    .content .pst{
+        font-size: 15px;
+    }
+    .gt-touch .content{
+        margin-bottom: 20px;
+    }
+    .form-group{
+        margin-bottom: 20px;
+    }
+    .gt-touch .frm-content .form-control{
+        font-size: 15px;
+    }
+    .btn-custom{
+        padding: 10px 25px;
+        font-size: 14px;
+    }
+    .analysis{
+        padding: 50px 0px;
+    }
+    .analysis .cmt{
+        font-size: 20px;
+    }
+    .dropdown-form-cont{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .btn-form{
+        padding: 10px;
+        height: 40px;
+        width: 40px;
+        font-size: 15px;
+        line-height: 10px;
+    }
+    .drop-form{
+        margin-top: 30px;
+        padding: 25px;
+    }
+    .form-dp{
+        margin-top: 20px;
+    }
+    .drop-form .form-control{
+        height: auto;
+        padding: 8px 10px;
+    }
+    .drop-form input::placeholder{
+        font-size: 14px;
+    }
+    .drop-form .btn-custom{
+        margin-top: 20px;
+        padding: 8px 20px;
+    }
+    .drop-form .btn-close{
+        height: 30px;
+        width: 30px;
+        transform: translate(40%,-45%);
+        font-size: 14px;
+        line-height: 10px;
+        padding: 8px;
+    }
+    .drop-form::before{
+        border-left: 30px solid transparent;
+        border-right: 30px solid transparent;
+        border-bottom: 20px solid white;
+    }
+    .wrk-body{
+        padding: 50px 15px;
+    }
+    .wrk-body .content{
+        padding-bottom: 35px;
+    }
+    .prj-con .pjt{
+        font-size: 14px;
+        margin-top: 10px;
+    }
+    .pjd{
+        font-size: 12px;
+    }
+    .pjt-ic{
+        font-size: 28px;
+    }
+    .dsb{
+        margin-top: 15px;
+    }
+    .wrk-body .col-6{
+        padding: 0px;
+    }
+    .apr-body{
+        padding: 50px 0px;
+        background: #f3f3f3;
+    }
+    .apr-body .dsb,.abt-body .dsb{
+        background: rgb(29, 29, 29);
+    }
+    .apr-box{
+        margin-top: 15px;
+    }
+    .apr-box-body{
+        padding: 0px 15px;
+        padding-top: 15px;
+        text-align: justify;
+    }
+    .apr-box-body .cmt{
+        font-size: 18px;
+        text-align: left;
+        margin-bottom: 10px;
+    }
+    .apr-count-l{
+        transform: translate(220%, -255%);
+        height: 60px;
+        width: 60px;
+    }
+    .apr-count-r{
+        transform: translate(-200%, 445%);
+        height: 60px;
+        width: 60px;
+    }
+    .rd-3{
+        font-size: 30px!important;
+    }
+    .right{
+        text-align: left;
+    }
+    .right .cmt{
+        text-align: left;
+    }
+    .apr-count-l .cmt, .apr-count-r .cmt{
+        font-size: 30px;
+    }
+    .apr-count-l .pst, .apr-count-r .pst{
+        font-size: 16px;
+    }
+    .blg-con{
+        margin-top: 25px;
+    }
+    .abt-body{
+        padding: 40px 0px;
+    }
+    .abt-body .apr-box-body{
+        margin-top: 20px;
+    }
+    .banner{
+        min-height: 30vh;
+    }
+    .banner-con{
+        min-height: 70vh;
+    }
+    .banner .cmt{
+        font-size: 34px;
+    }
+    .banner .pst{
+        font-size: 18px;
+    }
+    .banner .btn-custom{
+        font-size: 16px;
+        padding: 8px 15px;
+    }
+    header{
+        padding: 10px 0px;
+    }
+    .nav-item .hover-ani{
+        font-size: 15px;
+    }
+    header .btn-custom{
+        padding: 8px 15px;
+        margin-left: 0px;
+    }
+    .dot{
+        position: relative;
+    }
+    .dot::before{
+        display: none;
+    }
+    .top-contact{
+        padding: 10px 0px;
+    }
+    .contact-list li p{
+        font-size: 12px;
+    }
+    .contact-list li a {
+        font-size: 14px;
+    }
+    .navbar-brand{
+        max-width: 140px;
+    }
 }

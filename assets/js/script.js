@@ -2,7 +2,7 @@
                     Preloader
 =========================================================================*/
 $(document).ready(function () {
-    preloader.style.display = "none";
+    document.getElementById('preloader').style.display = "none";
     title.innerHTML = "Home";
 });
 
@@ -29,3 +29,8 @@ document.querySelector('#close-form').addEventListener('click',function(){
     }
     $('#formButton').toggleClass("rotate"); 
 });
+
+/*=========================================================================
+                    AOS & WOW
+=========================================================================*/
+// AOS.init();
