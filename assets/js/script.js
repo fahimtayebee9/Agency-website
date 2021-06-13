@@ -35,4 +35,18 @@ document.querySelector('#close-form').addEventListener('click',function(){
 /*=========================================================================
                     FIXED MENUBAR
 =========================================================================*/
-
+function scrollBody() {
+    $(document).ready(function () {
+        $(window).scroll(function () {
+            var scrollheight = $(window).scrollTop();
+            if (scrollheight > 80) {
+                $("#menu").css("background", "#fff");
+                $("#menu").addClass("fixed-menu");
+                $("#menu").addClass("shadow-head");
+            } else {
+                $("#menu").removeClass("fixed-menu");
+                $("#menu").removeClass("shadow-head");
+            }
+        });
+    });
+}

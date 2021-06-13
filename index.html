@@ -33,24 +33,11 @@
     <script src="assets/js/jquery-3.5.1.js"></script>
     <script src="assets/lib/bootstrap-4.6.0-dist/js/popper.min.js"></script>
     <script src="assets/lib/bootstrap-4.6.0-dist/js/bootstrap.min.js"></script>
-
-    <script>
-        function scrollBody() {
-            $(document).ready(function () {
-                $(window).scroll(function () {
-                    var scrollheight = $(window).scrollTop();
-                    if (scrollheight > 80) {
-                        $("#menu").css("background", "#fff");
-                        $("#menu").addClass("fixed-menu");
-                        $("#menu").addClass("shadow-head");
-                    } else {
-                        $("#menu").removeClass("fixed-menu");
-                        $("#menu").removeClass("shadow-head");
-                    }
-                });
-            });
-        }
-    </script>
+    <script src="assets/lib/fontawesome-free/js/all.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/js/smooth-scroll-jump.js"></script>
+    <script src="assets/js/vanilla-tilt.js"></script>
+    <script src="assets/js/script.js"></script>
 
     <title id="title">Agency</title>
 </head>
@@ -558,13 +545,6 @@
 
     </section>
     <!-- Main Body End -->
-
-    <!-- Script Area -->
-    <script src="assets/lib/fontawesome-free/js/all.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="assets/js/smooth-scroll-jump.js"></script>
-    <script src="assets/js/vanilla-tilt.js"></script>
-    <script src="assets/js/script.js"></script>
 
     <script>
         AOS.init(
