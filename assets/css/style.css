@@ -772,6 +772,7 @@ footer p span{
     border-radius: 5px;
     position: relative;
     margin-top: 35px;
+    box-shadow: 0 0 10px 2px rgb(22 22 22 / 8%);
 }
 .apr-box-body{
     padding: 0px 75px;
@@ -1141,7 +1142,7 @@ header .btn-custom:hover{
         background: rgb(29, 29, 29);
     }
     .apr-box{
-        margin-top: 15px;
+        margin-top: 25px;
     }
     .apr-box-body{
         padding: 0px 15px;
@@ -1358,7 +1359,7 @@ header .btn-custom:hover{
         background: rgb(29, 29, 29);
     }
     .apr-box{
-        margin-top: 15px;
+        margin-top: 25px;
     }
     .apr-box-body{
         padding: 0px 15px;
@@ -1575,7 +1576,7 @@ header .btn-custom:hover{
         background: rgb(29, 29, 29);
     }
     .apr-box{
-        margin-top: 15px;
+        margin-top: 25px;
     }
     .apr-box-body{
         padding: 0px 15px;
@@ -1792,7 +1793,7 @@ header .btn-custom:hover{
         background: rgb(29, 29, 29);
     }
     .apr-box{
-        margin-top: 15px;
+        margin-top: 25px;
     }
     .apr-box-body{
         padding: 0px 15px;
@@ -2009,7 +2010,7 @@ header .btn-custom:hover{
         background: rgb(29, 29, 29);
     }
     .apr-box{
-        margin-top: 15px;
+        margin-top: 25px;
     }
     .apr-box-body{
         padding: 0px 15px;
@@ -2223,11 +2224,10 @@ header .btn-custom:hover{
         background: rgb(29, 29, 29);
     }
     .apr-box{
-        margin-top: 15px;
+        margin-top: 25px;
     }
     .apr-box-body{
-        padding: 0px 15px;
-        padding-top: 15px;
+        padding: 15px 15px;
     }
     .apr-box-body .cmt{
         font-size: 18px;
@@ -2438,11 +2438,10 @@ header .btn-custom:hover{
         background: rgb(29, 29, 29);
     }
     .apr-box{
-        margin-top: 15px;
+        margin-top: 25px;
     }
     .apr-box-body{
-        padding: 0px 15px;
-        padding-top: 15px;
+        padding: 15px 15px;
     }
     .apr-box-body .cmt{
         font-size: 18px;
@@ -2652,12 +2651,10 @@ header .btn-custom:hover{
         background: rgb(29, 29, 29);
     }
     .apr-box{
-        margin-top: 15px;
+        margin-top: 25px;
     }
     .apr-box-body{
-        padding: 0px 15px;
-        padding-top: 15px;
-        padding-bottom: 15px;
+        padding: 15px 15px;
     }
     .apr-box-body .cmt{
         font-size: 18px;
@@ -2870,11 +2867,10 @@ header .btn-custom:hover{
         background: rgb(29, 29, 29);
     }
     .apr-box{
-        margin-top: 15px;
+        margin-top: 25px;
     }
     .apr-box-body{
-        padding: 0px 15px;
-        padding-top: 15px;
+        padding: 15px 15px;
     }
     .apr-box-body .cmt{
         font-size: 18px;
@@ -3087,11 +3083,10 @@ header .btn-custom:hover{
         background: rgb(29, 29, 29);
     }
     .apr-box{
-        margin-top: 15px;
+        margin-top: 25px;
     }
     .apr-box-body{
-        padding: 0px 15px;
-        padding-top: 15px;
+        padding: 15px 15px;
     }
     .apr-box-body .cmt{
         font-size: 18px;
@@ -3301,11 +3296,10 @@ header .btn-custom:hover{
         background: rgb(29, 29, 29);
     }
     .apr-box{
-        margin-top: 15px;
+        margin-top: 25px;
     }
     .apr-box-body{
-        padding: 0px 15px;
-        padding-top: 15px;
+        padding: 15px 15px;
     }
     .apr-box-body .cmt{
         font-size: 18px;
@@ -3518,8 +3512,7 @@ header .btn-custom:hover{
         margin-top: 15px;
     }
     .apr-box-body{
-        padding: 0px 15px;
-        padding-top: 15px;
+        padding: 15px 15px;
     }
     .apr-box-body .cmt{
         font-size: 18px;
@@ -3729,8 +3722,7 @@ header .btn-custom:hover{
         margin-top: 15px;
     }
     .apr-box-body{
-        padding: 0px 15px;
-        padding-top: 15px;
+        padding: 15px 15px;
     }
     .apr-box-body .cmt{
         font-size: 18px;
@@ -3940,8 +3932,7 @@ header .btn-custom:hover{
         margin-top: 15px;
     }
     .apr-box-body{
-        padding: 0px 15px;
-        padding-top: 15px;
+        padding: 15px 15px;
     }
     .apr-box-body .cmt{
         font-size: 18px;
@@ -4151,8 +4142,7 @@ header .btn-custom:hover{
         margin-top: 15px;
     }
     .apr-box-body{
-        padding: 0px 15px;
-        padding-top: 15px;
+        padding: 15px 15px;
     }
     .apr-box-body .cmt{
         font-size: 18px;
@@ -4362,8 +4352,7 @@ header .btn-custom:hover{
         margin-top: 15px;
     }
     .apr-box-body{
-        padding: 0px 15px;
-        padding-top: 15px;
+        padding: 15px 15px;
     }
     .apr-box-body .cmt{
         font-size: 18px;
@@ -4573,8 +4562,7 @@ header .btn-custom:hover{
         margin-top: 15px;
     }
     .apr-box-body{
-        padding: 0px 15px;
-        padding-top: 15px;
+        padding: 15px 15px;
         text-align: justify;
     }
     .apr-box-body .cmt{

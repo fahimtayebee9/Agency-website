@@ -45,7 +45,7 @@ document.querySelector('#close-form').addEventListener('click',function(){
     } else {
         dropForm.style.display = "block";
     }
-    $('#formButton').toggleClass("rotate"); 
+    $('#frmBtn').toggleClass("rotate"); 
 });
 
 /*=========================================================================
@@ -86,3 +86,13 @@ function screenSize(){
         $("#step4").addClass("apr-count-r");
     }
 }
+
+
+/*=========================================================================
+                    Approach Steps Mouse Follow Effect
+=========================================================================*/
+VanillaTilt.init(document.querySelector(".apr-box"), {
+    max: 25,
+    speed: 400
+});
+VanillaTilt.init(document.querySelectorAll(".apr-box"));
