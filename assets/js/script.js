@@ -2,8 +2,10 @@
                     Preloader
 =========================================================================*/
 $(document).ready(function () {
-    document.getElementById('preloader').style.display = "none";
-    title.innerHTML = "Home";
+    setTimeout(function(){
+        document.getElementById('preloader').style.display = "none";
+        title.innerHTML = "Home";
+    },3000);
 });
 
 /*=========================================================================
@@ -31,6 +33,6 @@ document.querySelector('#close-form').addEventListener('click',function(){
 });
 
 /*=========================================================================
-                    AOS & WOW
+                    FIXED MENUBAR
 =========================================================================*/
-// AOS.init();
+
