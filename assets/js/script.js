@@ -6,6 +6,22 @@ $(document).ready(function () {
         document.getElementById('preloader').style.display = "none";
         title.innerHTML = "Home";
     },3000);
+
+    // CHANGE STEPS CLASS WHILE CHECKING RESPONSIVE
+    $(window).resize(function() {
+        if(window.innerWidth < 575){
+            $("#step2").removeClass("apr-count-r");
+            $("#step4").removeClass("apr-count-r");
+            $("#step2").addClass("apr-count-l");
+            $("#step4").addClass("apr-count-l");
+        }
+        else{
+            $("#step2").removeClass("apr-count-l");
+            $("#step4").removeClass("apr-count-l");
+            $("#step2").addClass("apr-count-r");
+            $("#step4").addClass("apr-count-r");
+        }
+    });
 });
 
 /*=========================================================================
@@ -13,7 +29,7 @@ $(document).ready(function () {
 =========================================================================*/
 const dropForm = document.querySelector('#dropForm');
 const icForm = document.querySelector('#ic-form');
-document.querySelector('#formButton').addEventListener('click',function(){
+document.querySelector('#frmBtn').addEventListener('click',function(){
     if (dropForm.style.display !== "none") {
         dropForm.style.display = "none";
         dropForm.style.height = "0%";
@@ -49,4 +65,24 @@ function scrollBody() {
             }
         });
     });
+}
+
+// SET STEPS CLASS ONLOAD
+function screenSize(){
+    if(window.innerWidth < 575){
+        if(document.querySelector('#step2').classList.contains('apr-count-r')){
+            $("#step2").removeClass("apr-count-r");
+            $("#step4").removeClass("apr-count-r");
+        }
+        $("#step2").addClass("apr-count-l");
+        $("#step4").addClass("apr-count-l");
+    }
+    else{
+        if(document.querySelector('#step2').classList.contains('apr-count-r')){
+            $("#step2").removeClass("apr-count-l");
+            $("#step4").removeClass("apr-count-l");
+        }
+        $("#step2").addClass("apr-count-r");
+        $("#step4").addClass("apr-count-r");
+    }
 }

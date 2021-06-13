@@ -794,6 +794,7 @@ footer p span{
     color: white;
     text-align: center;
     margin: auto;
+    z-index: 99;
 }
 .apr-count-r{
     position: absolute;
@@ -839,6 +840,34 @@ footer p span{
 
 .blg-con{
     margin-top: 55px;
+}
+
+.step-imgBox{
+    background-size: cover;
+    min-height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 115px;
+}
+.br-lft{
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.br-rgt{
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.step-1{
+    background-image: url(../img/blog_1.png);
+}
+.step-2{
+    background-image: url(../img/blog_2.png);
+}
+.step-3{
+    background-image: url(../img/blog_3.png);
+}
+.step-4{
+    background-image: url(../img/blog_4.png);
 }
 
 /* =============================================
@@ -1178,6 +1207,7 @@ header .btn-custom:hover{
     }
     header{
         padding: 10px 0px;
+        padding-top: 0px;
     }
     .nav-item .hover-ani{
         font-size: 16px;
@@ -1394,6 +1424,7 @@ header .btn-custom:hover{
     }
     header{
         padding: 10px 0px;
+        padding-top: 0px;
     }
     .nav-item .hover-ani{
         font-size: 16px;
@@ -1610,6 +1641,7 @@ header .btn-custom:hover{
     }
     header{
         padding: 10px 0px;
+        padding-top: 0px;
     }
     .nav-item .hover-ani{
         font-size: 16px;
@@ -1826,6 +1858,7 @@ header .btn-custom:hover{
     }
     header{
         padding: 10px 0px;
+        padding-top: 0px;
     }
     .nav-item .hover-ani{
         font-size: 15px;
@@ -2042,6 +2075,7 @@ header .btn-custom:hover{
     }
     header{
         padding: 10px 0px;
+        padding-top: 0px;
     }
     .nav-item .hover-ani{
         font-size: 15px;
@@ -2255,6 +2289,7 @@ header .btn-custom:hover{
     }
     header{
         padding: 10px 0px;
+        padding-top: 0px;
     }
     .nav-item .hover-ani{
         font-size: 18px;
@@ -2469,6 +2504,7 @@ header .btn-custom:hover{
     }
     header{
         padding: 10px 0px;
+        padding-top: 0px;
     }
     .nav-item .hover-ani{
         font-size: 18px;
@@ -2686,6 +2722,7 @@ header .btn-custom:hover{
     }
     header{
         padding: 10px 0px;
+        padding-top: 0px;
     }
     .nav-item .hover-ani{
         font-size: 18px;
@@ -2899,6 +2936,7 @@ header .btn-custom:hover{
     }
     header{
         padding: 10px 0px;
+        padding-top: 0px;
     }
     .nav-item .hover-ani{
         font-size: 15px;
@@ -3066,10 +3104,10 @@ header .btn-custom:hover{
         width: 70px;
     }   
     .apr-count-r{
-        transform: translate(-240%, 385%);
+        transform: translate(-230%,-250%);
         height: 70px;
         width: 70px;
-    }
+    }   
     .rd-3{
         font-size: 30px!important;
     }
@@ -3115,6 +3153,7 @@ header .btn-custom:hover{
     }
     header{
         padding: 10px 0px;
+        padding-top: 0px;
     }
     .nav-item .hover-ani{
         font-size: 15px;
@@ -3279,7 +3318,7 @@ header .btn-custom:hover{
         width: 70px;
     }   
     .apr-count-r{
-        transform: translate(-240%, 385%);
+        transform: translate(-230%,-250%);
         height: 70px;
         width: 70px;
     }
@@ -3328,6 +3367,7 @@ header .btn-custom:hover{
     }
     header{
         padding: 10px 0px;
+        padding-top: 0px;
     }
     .nav-item .hover-ani{
         font-size: 15px;
@@ -3487,12 +3527,12 @@ header .btn-custom:hover{
         margin-bottom: 10px;
     }
     .apr-count-l{
-        transform: translate(350%, -330%);
+        transform: translate(50%,-480%);
         height: 70px;
         width: 70px;
     }   
     .apr-count-r{
-        transform: translate(-350%, 400%);
+        transform: translate(70%,-490%);
         height: 70px;
         width: 70px;
     }
@@ -3538,6 +3578,7 @@ header .btn-custom:hover{
     }
     header{
         padding: 10px 0px;
+        padding-top: 0px;
     }
     .nav-item .hover-ani{
         font-size: 15px;
@@ -3697,14 +3738,14 @@ header .btn-custom:hover{
         margin-bottom: 10px;
     }
     .apr-count-l{
-        transform: translate(350%, -285%);
+        transform: translate(50%,-460%);
         height: 65px;
         width: 60px;
     }   
     .apr-count-r{
-        transform: translate(-350%, 445%);
+        transform: translate(70%,-490%);
         height: 60px;
-        width: 60px;
+        width: 60px;    
     }
     .rd-3{
         font-size: 30px!important;
@@ -3748,6 +3789,7 @@ header .btn-custom:hover{
     }
     header{
         padding: 10px 0px;
+        padding-top: 0px;
     }
     .nav-item .hover-ani{
         font-size: 15px;
@@ -3907,12 +3949,12 @@ header .btn-custom:hover{
         margin-bottom: 10px;
     }
     .apr-count-l{
-        transform: translate(350%, -285%);
+        transform: translate(50%,-430%);
         height: 65px;
         width: 60px;
     }   
     .apr-count-r{
-        transform: translate(-350%, 445%);
+        transform: translate(70%,-490%);
         height: 60px;
         width: 60px;
     }
@@ -3958,6 +4000,7 @@ header .btn-custom:hover{
     }
     header{
         padding: 10px 0px;
+        padding-top: 0px;
     }
     .nav-item .hover-ani{
         font-size: 15px;
@@ -4117,7 +4160,7 @@ header .btn-custom:hover{
         margin-bottom: 10px;
     }
     .apr-count-l{
-        transform: translate(300%, -285%);
+        transform: translate(50%, -385%);
         height: 65px;
         width: 60px;
     }   
@@ -4168,6 +4211,7 @@ header .btn-custom:hover{
     }
     header{
         padding: 10px 0px;
+        padding-top: 0px;
     }
     .nav-item .hover-ani{
         font-size: 15px;
@@ -4327,7 +4371,7 @@ header .btn-custom:hover{
         margin-bottom: 10px;
     }
     .apr-count-l{
-        transform: translate(250%, -285%);
+        transform: translate(50%, -320%);
         height: 65px;
         width: 60px;
     }
@@ -4378,6 +4422,7 @@ header .btn-custom:hover{
     }
     header{
         padding: 10px 0px;
+        padding-top: 0px;
     }
     .nav-item .hover-ani{
         font-size: 15px;
@@ -4538,7 +4583,7 @@ header .btn-custom:hover{
         margin-bottom: 10px;
     }
     .apr-count-l{
-        transform: translate(220%, -255%);
+        transform: translate(50%, -315%);
         height: 60px;
         width: 60px;
     }
@@ -4589,6 +4634,7 @@ header .btn-custom:hover{
     }
     header{
         padding: 10px 0px;
+        padding-top: 0px;
     }
     .nav-item .hover-ani{
         font-size: 15px;

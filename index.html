@@ -37,12 +37,11 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="assets/js/smooth-scroll-jump.js"></script>
     <script src="assets/js/vanilla-tilt.js"></script>
-    <script src="assets/js/script.js"></script>
-
+    
     <title id="title">Agency</title>
 </head>
 
-<body onscroll="scrollBody()">
+<body onscroll="scrollBody()" onload="screenSize()">
 
     <!-- Preloader -->
     <div id="preloader" class="light"> 
@@ -151,7 +150,7 @@
             <div class="container">
                 <div class="row banner-con" data-aos="fade-down">
                     <div class="col-md-8">
-                        <h1 class="cmt">We Providing</h1>
+                        <h1 class="cmt">We Providing <a href="test.html">TEST</a></h1>
                         <p class="pst">Social Media marketing for businesses</p>
                         <a href="" class="btn btn-custom">free consultation</a>
                     </div>
@@ -237,7 +236,8 @@
                         <div class="apr-box">
                             <div class="row">
                                 <div class="col-md-4">
-                                    <img src="assets/img/blog_1.png" class="img-fluid w-100" alt="">
+                                    <!-- <div class="step-imgBox step-1 br-rgt"></div> -->
+                                    <img src="assets/img/blog_1.png" class="img-fluid w-100 h-100" alt="">
                                 </div>
                                 <div class="col-md-8 m-auto">
                                     <div class="apr-count-l">
@@ -246,7 +246,7 @@
                                     </div>
                                     <div class="apr-box-body">
                                         <h4 class="cmt">Step 1 : Heading Here</h4>
-                                        <p class="psd">Lorem Ipsum is simply dummy text of the printing and typesetting
+                                        <p class="psd m-0">Lorem Ipsum is simply dummy text of the printing and typesetting
                                             industry. Lorem Ipsum has been the industry's standard dummy text ever since
                                             the 1500s, when an unknown printer took a galley of type and scrambled.</p>
                                     </div>
@@ -259,20 +259,21 @@
                     <div class="col-sm-6  col-md-12" data-aos="zoom-in">
                         <div class="apr-box">
                             <div class="row">
-                                <div class="col-md-8 m-auto">
-                                    <div class="apr-count-r">
+                                <div class="col-md-8 m-auto order-md-1 order-sm-2 order-2">
+                                    <div class="apr-count-r" id="step2">
                                         <h1 class="cmt">2</h1>
                                         <p class="pst">Step</p>
                                     </div>
                                     <div class="apr-box-body right">
                                         <h4 class="cmt">Step 2 : Heading Here</h4>
-                                        <p class="psd">Lorem Ipsum is simply dummy text of the printing and typesetting
+                                        <p class="psd m-0">Lorem Ipsum is simply dummy text of the printing and typesetting
                                             industry. Lorem Ipsum has been the industry's standard dummy text ever since
                                             the 1500s, when an unknown printer took a galley of type and scrambled.</p>
                                     </div>
                                 </div>
-                                <div class="col-md-4">
-                                    <img src="assets/img/blog_2.png" class="img-fluid w-100" alt="">
+                                <div class="col-md-4 order-md-2 order-sm-1 order-1">
+                                    <!-- <div class="step-imgBox step-2 br-lft"></div> -->
+                                    <img src="assets/img/blog_2.png" class="img-fluid w-100 h-100" alt="">
                                 </div>
                             </div>
                         </div>
@@ -283,7 +284,8 @@
                         <div class="apr-box">
                             <div class="row">
                                 <div class="col-md-4">
-                                    <img src="assets/img/blog_3.png" class="img-fluid w-100" alt="">
+                                    <!-- <div class="step-imgBox step-3 br-rgt"></div> -->
+                                    <img src="assets/img/blog_3.png" class="img-fluid w-100 h-100" alt="">
                                 </div>
                                 <div class="col-md-8 m-auto">
                                     <div class="apr-count-l">
@@ -292,7 +294,7 @@
                                     </div>
                                     <div class="apr-box-body">
                                         <h4 class="cmt">Step 3 : Heading Here</h4>
-                                        <p class="psd">Lorem Ipsum is simply dummy text of the printing and typesetting
+                                        <p class="psd m-0">Lorem Ipsum is simply dummy text of the printing and typesetting
                                             industry. Lorem Ipsum has been the industry's standard dummy text ever since
                                             the 1500s, when an unknown printer took a galley of type and scrambled.</p>
                                     </div>
@@ -305,20 +307,21 @@
                     <div class="col-sm-6  col-md-12" data-aos="zoom-in">
                         <div class="apr-box">
                             <div class="row">
-                                <div class="col-md-8 m-auto">
-                                    <div class="apr-count-r">
+                                <div class="col-md-8 m-auto order-md-1 order-sm-2 order-2">
+                                    <div class="apr-count-r" id="step4">
                                         <h1 class="cmt rd-3">4</h1>
                                         <p class="pst">Step</p>
                                     </div>
                                     <div class="apr-box-body right">
                                         <h4 class="cmt">Step 4 : Heading Here</h4>
-                                        <p class="psd">Lorem Ipsum is simply dummy text of the printing and typesetting
+                                        <p class="psd m-0">Lorem Ipsum is simply dummy text of the printing and typesetting
                                             industry. Lorem Ipsum has been the industry's standard dummy text ever since
                                             the 1500s, when an unknown printer took a galley of type and scrambled.</p>
                                     </div>
                                 </div>
-                                <div class="col-md-4">
-                                    <img src="assets/img/blog_4.png" class="img-fluid w-100" alt="">
+                                <div class="col-md-4 order-md-2 order-sm-1 order-1">
+                                    <!-- <div class="step-imgBox step-4 br-lft"></div> -->
+                                    <img src="assets/img/blog_4.png" class="img-fluid w-100 h-100" alt="">
                                 </div>
                             </div>
                         </div>
@@ -451,7 +454,7 @@
                             <p class="pst">Enter your details below</p>
                         </div>
                         <div class="dropdown-form-cont">
-                            <button id="formButton" class="btn btn-form">
+                            <button id="frmBtn" class="btn btn-form">
                                 <i id="ic-form" class="animate-icon fas fa-chevron-down" aria-hidden="true"></i>
                             </button>
                             <div class="drop-form" id="dropForm" style="display: none;">
@@ -545,6 +548,9 @@
 
     </section>
     <!-- Main Body End -->
+
+    <!-- MAIN SCRIPT -->
+    <script src="assets/js/script.js"></script>
 
     <script>
         AOS.init(
