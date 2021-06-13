@@ -21,6 +21,31 @@
     font-family: HelveticaNormal;
     src: url(../fonts/Helvetica.ttf);
 }
+
+/*=================================================================
+                    FIXED MENU                           
+=================================================================*/
+.fixed-menu{
+    position: fixed;
+    transition: 0.4s all ease-in-out;
+    -webkit-transition: 0.4s all ease-in-out;
+    -moz-transition: 0.4s all ease-in-out;
+    -ms-transition: 0.4s all ease-in-out;
+    -o-transition: 0.4s all ease-in-out;
+    z-index: 999;
+}
+.navbar-back {
+    /* position: relative; */
+    top: 0%;
+    z-index: 999;
+    left: 0%;
+    transform: translate(0%, 0%);
+    background: #fff;
+    width: 100%;
+}
+.shadow-head{
+    box-shadow: 0 0 10px 2px #0c0c0c94;
+}
 /*=================================================================
                     PRELOADER                              
 =================================================================*/
@@ -878,6 +903,10 @@ footer p span{
 ============================================= */
 header{
     padding: 15px 0px;
+    padding-top: 0px;
+}
+#menubar{
+    padding-top: 15px;
 }
 .nav-item .hover-ani{
     font-size: 18px;

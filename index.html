@@ -29,10 +29,20 @@
         href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
         rel="stylesheet">
 
+    <!-- Script Area -->
+    <script src="assets/js/jquery-3.5.1.js"></script>
+    <script src="assets/lib/bootstrap-4.6.0-dist/js/popper.min.js"></script>
+    <script src="assets/lib/bootstrap-4.6.0-dist/js/bootstrap.min.js"></script>
+    <script src="assets/lib/fontawesome-free/js/all.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/js/smooth-scroll-jump.js"></script>
+    <script src="assets/js/vanilla-tilt.js"></script>
+    <script src="assets/js/script.js"></script>
+
     <title id="title">Agency</title>
 </head>
 
-<body>
+<body onscroll="scrollBody()">
 
     <!-- Preloader -->
     <div id="preloader" class="light"> 
@@ -69,38 +79,37 @@
     <!-- Main Body Section -->
     <section class="overflow-hidden">
 
-        <!-- TOP BAR -->
-        <div class="top-contact" id="top-menu">
-            <div class="container">
-                <div class="row justify-content-end">
-                    <div class="col-md-6">
-                        <ul class="d-flex m-0 list-unstyled justify-content-end contact-list">
-                            <li>
-                                <p>
-                                    <i><i class="fas fa-mobile-alt"></i></i>6758 41678
-                                </p>
-                            </li>
-                            <li>
-                                <p>
-                                    <i><i class="fas fa-envelope-open-text"></i></i>info@business.co
-                                </p>
-                            </li>
-                            <li>
-                                <a href="pre.html">
-                                    <i class="fab fa-facebook-square default-color"></i>
-                                </a>
-                            </li>
-                        </ul>
+        <!-- MENU BAR -->
+        <header class="header-content navbar-back" id="menu">
+            <!-- TOP BAR -->
+            <div class="top-contact" id="top-menu">
+                <div class="container">
+                    <div class="row justify-content-end">
+                        <div class="col-md-6">
+                            <ul class="d-flex m-0 list-unstyled justify-content-end contact-list">
+                                <li>
+                                    <p>
+                                        <i><i class="fas fa-mobile-alt"></i></i>6758 41678
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <i><i class="fas fa-envelope-open-text"></i></i>info@business.co
+                                    </p>
+                                </li>
+                                <li>
+                                    <a href="pre.html">
+                                        <i class="fab fa-facebook-square default-color"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-
-        <!-- MENU BAR -->
-        <header>
-            <div class="container">
-                <nav id="menu"
-                    class="navbar navbar-expand-lg navbar-light navbar-back justify-content-between aos-init aos-animate"
+            
+            <div class="container" id="menubar">
+                <nav class="navbar navbar-expand-lg navbar-light navbar-back justify-content-between aos-init aos-animate"
                     data-aos="fade-right">
                     <div class="container">
                         <a class="navbar-brand" href="#"><img src="assets/img/logo.png" class="img-fluid w-100"
@@ -536,16 +545,6 @@
 
     </section>
     <!-- Main Body End -->
-
-    <!-- Script Area -->
-    <script src="assets/js/jquery-3.5.1.js"></script>
-    <script src="assets/lib/bootstrap-4.6.0-dist/js/popper.min.js"></script>
-    <script src="assets/lib/bootstrap-4.6.0-dist/js/bootstrap.min.js"></script>
-    <script src="assets/lib/fontawesome-free/js/all.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="assets/js/smooth-scroll-jump.js"></script>
-    <script src="assets/js/vanilla-tilt.js"></script>
-    <script src="assets/js/script.js"></script>
 
     <script>
         AOS.init(

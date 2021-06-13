@@ -2,8 +2,10 @@
                     Preloader
 =========================================================================*/
 $(document).ready(function () {
-    document.getElementById('preloader').style.display = "none";
-    title.innerHTML = "Home";
+    setTimeout(function(){
+        document.getElementById('preloader').style.display = "none";
+        title.innerHTML = "Home";
+    },3000);
 });
 
 /*=========================================================================
@@ -31,6 +33,20 @@ document.querySelector('#close-form').addEventListener('click',function(){
 });
 
 /*=========================================================================
-                    AOS & WOW
+                    FIXED MENUBAR
 =========================================================================*/
-// AOS.init();
+function scrollBody() {
+    $(document).ready(function () {
+        $(window).scroll(function () {
+            var scrollheight = $(window).scrollTop();
+            if (scrollheight > 80) {
+                $("#menu").css("background", "#fff");
+                $("#menu").addClass("fixed-menu");
+                $("#menu").addClass("shadow-head");
+            } else {
+                $("#menu").removeClass("fixed-menu");
+                $("#menu").removeClass("shadow-head");
+            }
+        });
+    });
+}
